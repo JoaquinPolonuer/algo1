@@ -1,0 +1,161 @@
+\documentclass[a4paper]{article}
+
+\setlength{\parskip}{2mm}
+\newcommand{\tab}{~ \qquad}
+\input{Algo1Macros}
+\usepackage{caratula} % Version modificada para usar las macros de algo1 de ~> https://github.com/bcardiff/dc-tex
+
+\begin{document}
+
+\titulo{TP de Especificación}
+\subtitulo{Esperando el Bondi}
+\fecha{30 de Marzo de 2022}
+\materia{Algoritmos y Estructuras de Datos I}
+\grupo{Grupo 1}
+
+\newcommand{\dato}{\textit{Dato}}
+\newcommand{\individuo}{\textit{Individuo}}
+
+\newcommand{\tiempo}{\textit{Tiempo}}
+\newcommand{\dist}{\textit{Dist}}
+\newcommand{\gps}{\textit{GPS}}
+\newcommand{\recorrido}{\textit{Recorrido}}
+\newcommand{\viaje}{\textit{Viaje}}
+\newcommand{\nombr}{\textit{Nombre}}
+\newcommand{\grilla}{\textit{Grilla}}
+
+
+% Pongan cuantos integrantes quieran
+\integrante{Polonuer, Joaquin}{1612/21}{jtpolonuer@gmail.com}
+\integrante{González, Facundo}{1440/21}{facundo2gonzalez2@gmail.com}
+\integrante{Jaime, Brian David}{411/18}{brian.d.jaime97@gmail.com}
+\integrante{Guberman, Diego}{469/17}{diego98g@hotmail.com}
+
+\maketitle
+
+
+\section{Definición de Tipos}
+\begin{description}
+    \item type $\tiempo = \float$
+    \item type $\dist = \float$
+    \item type $\gps = \float \times \float$
+    \item type $\recorrido = \TLista{\gps}$
+    \item type $\viaje = \TLista{\tiempo \times \gps}$
+    \item type $\nombr = \ent \times \ent$
+    \item type $\grilla = \TLista{\gps \times \gps \times \nombr}$
+\end{description}
+
+
+\section{Constantes}
+\aux{MIN}{}{\ent}{1}
+\aux{MAX}{}{\ent}{10}
+
+
+\section{Problemas}
+
+\subsection{Ejercicio 1}
+\begin{proc}{viajeValido}{\In v: \viaje, \Out res: $\bool$}{}
+    \pre{\True}
+    \post{res = \True \leftrightarrow esViajeValido(v)}
+
+    \pred{esViajeValido}{v: \viaje}{
+        (\forall i:\ent) (0 \leq i < \longitud{v} \implicaLuego (esTiempoValido(v[i]_0) \wedge sonCoordenadasValidas(v[i]_1))
+    }
+
+    \pred{esTiempoValido}{t: \tiempo}{
+        t \geq 0
+    }
+
+    \pred{sonCoordenadasValidas}{c: \gps}{
+        -90.0 \leq c_0 \leq 90.0 \wedge -180.0 \leq c_1 \leq 180.0
+    }
+
+\end{proc}
+
+
+\subsection{Ejercicio 2}
+\begin{proc}{recorridoValido}{\In v: \recorrido, \Out res: $\bool$}{}
+    \pre{\True}
+    \post{res = \True \leftrightarrow esRecorridoValido(v)}
+
+    \pred{esRecorridoValido}{v: \recorrido}{
+        (\forall i:\ent) (0 \leq i < \longitud{v} \implicaLuego sonCoordenadasValidas(v[i]))
+    }
+
+\end{proc}
+
+\subsection{Ejercicio 3}
+
+\begin{proc}{enTerritorio}{\In v: \viaje, \In r: \dist, \Out res: $\bool$}{}
+    \pre{esViajeValido(v)}
+    \post{res = \True \leftrightarrow estaEnTerritorio(v,r)}
+
+    \pred{estaEnTerritorio}{v: \viaje, r: \dist}{
+    (\exists c: \gps)(sonCoordenadasValidas(c) \yLuego (\forall i: \ent)(0 \leq i < \longitud{v} \implicaLuego dist(c,v[i]_1) \leq r))
+    }
+
+\end{proc}
+
+\subsection{Ejercicio 4}
+
+\begin{proc}{tiempoTotal}{\In v: \viaje, \Out t: \tiempo}{}
+    \pre{esViajeValido(v)}
+    \post{maximaDiferenciaTiempo(v,t)}
+
+    \pred{esMaximaDiferenciaTiempo}{t: \tiempo, v: \viaje}{
+        ((\exists i,j: \ent)(0 \leq i,j < \longitud{v} \yLuego \longitud{v[i]_0 - v[j]_0} = t)) \wedge (\neg(\exists i,j: \ent)(0 \leq i,j < \longitud{v} \yLuego \longitud{v[i]_0 - v[j]_0} > t))
+    }
+
+    %Se me ocurrió lo siguiente para este. Qué les parece? - Diego
+
+    \pred{maximaDiferenciaTiempo}{v: \viaje, t: \tiempo}{
+        (\exists ti,tf: \tiempo)((esTiempoValido(ti) \wedge esTiempoValido(tf)) \yLuego (esMinimoTiempo(v, ti) \wedge \\ esMaximoTiempo(v, tf)) \wedge t = tf - ti)
+    }
+
+    \pred{esMinimoTiempo}{v: \viaje, t: \tiempo}{
+        (\exists i: \ent)(0 \leq i < \longitud{v} \yLuego (\forall j: \ent)(0 \leq j < \longitud{v} \implicaLuego v[i]_0 \leq v[j]_0) \wedge t = v[i]_0)
+    }
+
+    \pred{esMaximoTiempo}{v: \viaje, t: \tiempo}{
+        (\exists i: \ent)(0 \leq i < \longitud{v} \yLuego (\forall j: \ent)(0 \leq j < \longitud{v} \implicaLuego v[i]_0 \geq v[j]_0) \wedge t = v[i]_0)
+    }
+
+\end{proc}
+%Ojo que dice que "no necesariamente están ordenados" en las mediciones de los viajes
+
+\subsection{Ejercicio 5}
+
+\begin{proc}{distanciaTotal}{\In v: \viaje, \Out d: \dist}{}
+    \pre{esViajeValido(v)}
+    \post{distanciaViajeOrdenado(v,d)}
+
+    \pred{distanciaViajeOrdenado}{v: \viaje, d: \dist}{
+        (\exists vo: \viaje)(esViajeValido(vo) \yLuego esElViajeOrdenado(v,vo) \wedge d = sumaDistanciasSucesivas(vo))
+    }
+
+    \pred{esElViajeOrdenado}{v,vo: \viaje}{
+        esPermutacion(v,vo) \wedge (\forall i:\ent)(0 \leq i < \longitud{vo}-1 \implicaLuego vo[i]_0 < vo[i+1]_0)
+    }
+
+    \pred{esPermutacion}{v1,v2: \viaje}{
+        (\forall e: \tiempo \times \gps)(\# apariciones(v1,e) = \# apariciones (v2,e))
+    }
+
+    \aux{\#apariciones}{v: \viaje, e: $\tiempo \times \gps$}{\ent}{\sum_{i=0}^{\longitud{v}-1} \IfThenElse{v[i] = e}{1}{0}
+    }
+
+    \aux{sumaDistanciasSucesivas}{v: \viaje}{\dist}{
+    \sum_{i=0}^{\longitud{v}-2} dist(v[i]_1,v[i+1]_1)
+    }
+
+\end{proc}
+
+\subsection{Ejercicio 6}
+
+\begin{proc}{}{}{}
+    \pre{}
+    \post{}
+
+\end{proc}
+
+\end{document}
