@@ -4,7 +4,15 @@
 using namespace std;
 
 int indiceMinSubsec(vector<int> v, int l, int r){
-  return 0;
+  int min = v[l];
+  int indice_min = l;
+  for (int i = l; i<=r; i++){
+    if (v[i] < min){
+      min = v[i];
+      indice_min = i;
+    }
+  }
+  return indice_min;
 }
 
 int main() {
