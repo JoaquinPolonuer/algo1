@@ -1185,7 +1185,7 @@
         -: 1181: public:
         -: 1182:  typedef T element_type;
         -: 1183:
-     134*: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
+     121*: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
 ------------------
 _ZN7testing8internal10scoped_ptrINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE18ValueHolderFactoryEEC2EPS8_:
 function _ZN7testing8internal10scoped_ptrINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE18ValueHolderFactoryEEC2EPS8_ called 1 returned 100% blocks executed 100%
@@ -1204,12 +1204,12 @@ function _ZN7testing8internal10scoped_ptrINS0_24InternalRunDeathTestFlagEEC2EPS2
         1: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
 ------------------
 _ZN7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2EPS8_:
-function _ZN7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2EPS8_ called 26 returned 100% blocks executed 100%
-       26: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
+function _ZN7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2EPS8_ called 32 returned 100% blocks executed 100%
+       32: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
 ------------------
 _ZN7testing8internal10scoped_ptrINS0_14GTestFlagSaverEEC2EPS2_:
-function _ZN7testing8internal10scoped_ptrINS0_14GTestFlagSaverEEC2EPS2_ called 11 returned 100% blocks executed 100%
-       11: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
+function _ZN7testing8internal10scoped_ptrINS0_14GTestFlagSaverEEC2EPS2_ called 14 returned 100% blocks executed 100%
+       14: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
 ------------------
 _ZN7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2EPS7_:
 function _ZN7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2EPS7_ called 0 returned 0% blocks executed 0%
@@ -1220,10 +1220,10 @@ function _ZN7testing8internal10scoped_ptrINS0_17StreamingListener20AbstractSocke
     #####: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
 ------------------
 _ZN7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEEC2EPS7_:
-function _ZN7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEEC2EPS7_ called 93 returned 100% blocks executed 100%
-       93: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
+function _ZN7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEEC2EPS7_ called 71 returned 100% blocks executed 100%
+       71: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
 ------------------
-      41*: 1185:  ~scoped_ptr() { reset(); }
+      50*: 1185:  ~scoped_ptr() { reset(); }
 ------------------
 _ZN7testing8internal10scoped_ptrINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE18ValueHolderFactoryEED2Ev:
 function _ZN7testing8internal10scoped_ptrINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE18ValueHolderFactoryEED2Ev called 1 returned 100% blocks executed 100%
@@ -1250,16 +1250,16 @@ function _ZN7testing8internal10scoped_ptrINS0_24InternalRunDeathTestFlagEED2Ev c
 call    0 returned 1
 ------------------
 _ZN7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev:
-function _ZN7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev called 26 returned 100% blocks executed 100%
-       26: 1185:  ~scoped_ptr() { reset(); }
-       26: 1185-block  0
-call    0 returned 26
+function _ZN7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev called 32 returned 100% blocks executed 100%
+       32: 1185:  ~scoped_ptr() { reset(); }
+       32: 1185-block  0
+call    0 returned 32
 ------------------
 _ZN7testing8internal10scoped_ptrINS0_14GTestFlagSaverEED2Ev:
-function _ZN7testing8internal10scoped_ptrINS0_14GTestFlagSaverEED2Ev called 11 returned 100% blocks executed 100%
-       11: 1185:  ~scoped_ptr() { reset(); }
-       11: 1185-block  0
-call    0 returned 11
+function _ZN7testing8internal10scoped_ptrINS0_14GTestFlagSaverEED2Ev called 14 returned 100% blocks executed 100%
+       14: 1185:  ~scoped_ptr() { reset(); }
+       14: 1185-block  0
+call    0 returned 14
 ------------------
 _ZN7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev:
 function _ZN7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev called 0 returned 0% blocks executed 0%
@@ -1280,29 +1280,29 @@ function _ZN7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11c
 call    0 never executed
 ------------------
         -: 1186:
-      532: 1187:  T& operator*() const { return *ptr_; }
+     452*: 1187:  T& operator*() const { return *ptr_; }
 ------------------
 _ZNK7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEdeEv:
-function _ZNK7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEdeEv called 4 returned 100% blocks executed 100%
-        4: 1187:  T& operator*() const { return *ptr_; }
-        4: 1187-block  0
+function _ZNK7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEdeEv called 0 returned 0% blocks executed 0%
+    #####: 1187:  T& operator*() const { return *ptr_; }
+    %%%%%: 1187-block  0
 ------------------
 _ZNK7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEEdeEv:
-function _ZNK7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEEdeEv called 528 returned 100% blocks executed 100%
-      528: 1187:  T& operator*() const { return *ptr_; }
-      528: 1187-block  0
+function _ZNK7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEEdeEv called 452 returned 100% blocks executed 100%
+      452: 1187:  T& operator*() const { return *ptr_; }
+      452: 1187-block  0
 ------------------
-       2*: 1188:  T* operator->() const { return ptr_; }
+    #####: 1188:  T* operator->() const { return ptr_; }
 ------------------
 _ZNK7testing8internal10scoped_ptrINS0_11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE18ValueHolderFactoryEEptEv:
-function _ZNK7testing8internal10scoped_ptrINS0_11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE18ValueHolderFactoryEEptEv called 1 returned 100% blocks executed 100%
-        1: 1188:  T* operator->() const { return ptr_; }
-        1: 1188-block  0
+function _ZNK7testing8internal10scoped_ptrINS0_11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE18ValueHolderFactoryEEptEv called 0 returned 0% blocks executed 0%
+    #####: 1188:  T* operator->() const { return ptr_; }
+    %%%%%: 1188-block  0
 ------------------
 _ZNK7testing8internal10scoped_ptrINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE18ValueHolderFactoryEEptEv:
-function _ZNK7testing8internal10scoped_ptrINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE18ValueHolderFactoryEEptEv called 1 returned 100% blocks executed 100%
-        1: 1188:  T* operator->() const { return ptr_; }
-        1: 1188-block  0
+function _ZNK7testing8internal10scoped_ptrINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE18ValueHolderFactoryEEptEv called 0 returned 0% blocks executed 0%
+    #####: 1188:  T* operator->() const { return ptr_; }
+    %%%%%: 1188-block  0
 ------------------
 _ZNK7testing8internal10scoped_ptrINS0_17StreamingListener20AbstractSocketWriterEEptEv:
 function _ZNK7testing8internal10scoped_ptrINS0_17StreamingListener20AbstractSocketWriterEEptEv called 0 returned 0% blocks executed 0%
@@ -1319,12 +1319,12 @@ function _ZNK7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_t
     #####: 1188:  T* operator->() const { return ptr_; }
     %%%%%: 1188-block  0
 ------------------
-     126*: 1189:  T* get() const { return ptr_; }
+      91*: 1189:  T* get() const { return ptr_; }
 ------------------
 _ZNK7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEE3getEv:
-function _ZNK7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEE3getEv called 93 returned 100% blocks executed 100%
-       93: 1189:  T* get() const { return ptr_; }
-       93: 1189-block  0
+function _ZNK7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEE3getEv called 71 returned 100% blocks executed 100%
+       71: 1189:  T* get() const { return ptr_; }
+       71: 1189-block  0
 ------------------
 _ZNK7testing8internal10scoped_ptrINS0_16DeathTestFactoryEE3getEv:
 function _ZNK7testing8internal10scoped_ptrINS0_16DeathTestFactoryEE3getEv called 0 returned 0% blocks executed 0%
@@ -1337,9 +1337,9 @@ function _ZNK7testing8internal10scoped_ptrINS0_24InternalRunDeathTestFlagEE3getE
         2: 1189-block  0
 ------------------
 _ZNK7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE3getEv:
-function _ZNK7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE3getEv called 31 returned 100% blocks executed 100%
-       31: 1189:  T* get() const { return ptr_; }
-       31: 1189-block  0
+function _ZNK7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE3getEv called 18 returned 100% blocks executed 100%
+       18: 1189:  T* get() const { return ptr_; }
+       18: 1189-block  0
 ------------------
 _ZNK7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE3getEv:
 function _ZNK7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE3getEv called 0 returned 0% blocks executed 0%
@@ -1353,14 +1353,14 @@ function _ZNK7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_t
         -: 1194:    return ptr;
         -: 1195:  }
         -: 1196:
-      42*: 1197:  void reset(T* p = NULL) {
-      42*: 1198:    if (p != ptr_) {
-      14*: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
-      14*: 1200:        delete ptr_;
+      51*: 1197:  void reset(T* p = NULL) {
+      51*: 1198:    if (p != ptr_) {
+      17*: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
+      17*: 1200:        delete ptr_;
         -: 1201:      }
-      14*: 1202:      ptr_ = p;
+      17*: 1202:      ptr_ = p;
         -: 1203:    }
-      42*: 1204:  }
+      51*: 1204:  }
 ------------------
 _ZN7testing8internal10scoped_ptrINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE18ValueHolderFactoryEE5resetEPS8_:
 function _ZN7testing8internal10scoped_ptrINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE18ValueHolderFactoryEE5resetEPS8_ called 1 returned 100% blocks executed 100%
@@ -1435,12 +1435,12 @@ call    2 returned 1
         1: 1204:  }
 ------------------
 _ZN7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE5resetEPS8_:
-function _ZN7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE5resetEPS8_ called 26 returned 100% blocks executed 25%
-       26: 1197:  void reset(T* p = NULL) {
-       26: 1198:    if (p != ptr_) {
-       26: 1198-block  0
+function _ZN7testing8internal10scoped_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE5resetEPS8_ called 32 returned 100% blocks executed 25%
+       32: 1197:  void reset(T* p = NULL) {
+       32: 1198:    if (p != ptr_) {
+       32: 1198-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 26
+branch  1 taken 32
     #####: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
     %%%%%: 1199-block  0
 call    0 never executed
@@ -1457,32 +1457,32 @@ call    3 never executed
     #####: 1202:      ptr_ = p;
     %%%%%: 1202-block  0
         -: 1203:    }
-       26: 1204:  }
+       32: 1204:  }
 ------------------
 _ZN7testing8internal10scoped_ptrINS0_14GTestFlagSaverEE5resetEPS2_:
-function _ZN7testing8internal10scoped_ptrINS0_14GTestFlagSaverEE5resetEPS2_ called 11 returned 100% blocks executed 100%
-       11: 1197:  void reset(T* p = NULL) {
-       11: 1198:    if (p != ptr_) {
-       11: 1198-block  0
-branch  0 taken 11 (fallthrough)
+function _ZN7testing8internal10scoped_ptrINS0_14GTestFlagSaverEE5resetEPS2_ called 14 returned 100% blocks executed 100%
+       14: 1197:  void reset(T* p = NULL) {
+       14: 1198:    if (p != ptr_) {
+       14: 1198-block  0
+branch  0 taken 14 (fallthrough)
 branch  1 taken 0
-       11: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
-       11: 1199-block  0
-call    0 returned 11
-branch  1 taken 11 (fallthrough)
+       14: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
+       14: 1199-block  0
+call    0 returned 14
+branch  1 taken 14 (fallthrough)
 branch  2 taken 0
-       11: 1200:        delete ptr_;
-       11: 1200-block  0
-branch  0 taken 11 (fallthrough)
+       14: 1200:        delete ptr_;
+       14: 1200-block  0
+branch  0 taken 14 (fallthrough)
 branch  1 taken 0
-       11: 1200-block  1
-call    2 returned 11
-call    3 returned 11
+       14: 1200-block  1
+call    2 returned 14
+call    3 returned 14
         -: 1201:      }
-       11: 1202:      ptr_ = p;
-       11: 1202-block  0
+       14: 1202:      ptr_ = p;
+       14: 1202-block  0
         -: 1203:    }
-       11: 1204:  }
+       14: 1204:  }
 ------------------
 _ZN7testing8internal10scoped_ptrINS0_17StreamingListener20AbstractSocketWriterEE5resetEPS3_:
 function _ZN7testing8internal10scoped_ptrINS0_17StreamingListener20AbstractSocketWriterEE5resetEPS3_ called 0 returned 0% blocks executed 0%
@@ -1899,36 +1899,36 @@ function _ZN7testing8internal13ImplicitCast_IPKvEET_S4_ called 0 returned 0% blo
         -: 1506:// When RTTI is available, the function performs a runtime
         -: 1507:// check to enforce this.
         -: 1508:template <class Derived, class Base>
-        6: 1509:Derived* CheckedDowncastToActualType(Base* base) {
+    #####: 1509:Derived* CheckedDowncastToActualType(Base* base) {
         -: 1510:#if GTEST_HAS_RTTI
-       6*: 1511:  GTEST_CHECK_(typeid(*base) == typeid(Derived));
+    #####: 1511:  GTEST_CHECK_(typeid(*base) == typeid(Derived));
         -: 1512:#endif
         -: 1513:
         -: 1514:#if GTEST_HAS_DOWNCAST_
         -: 1515:  return ::down_cast<Derived*>(base);
         -: 1516:#elif GTEST_HAS_RTTI
-       6*: 1517:  return dynamic_cast<Derived*>(base);  // NOLINT
+    #####: 1517:  return dynamic_cast<Derived*>(base);  // NOLINT
         -: 1518:#else
         -: 1519:  return static_cast<Derived*>(base);  // Poor man's downcast.
         -: 1520:#endif
         -: 1521:}
 ------------------
 _ZN7testing8internal27CheckedDowncastToActualTypeINS0_11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE11ValueHolderENS0_26ThreadLocalValueHolderBaseEEEPT_PT0_:
-function _ZN7testing8internal27CheckedDowncastToActualTypeINS0_11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE11ValueHolderENS0_26ThreadLocalValueHolderBaseEEEPT_PT0_ called 3 returned 100% blocks executed 53%
-        3: 1509:Derived* CheckedDowncastToActualType(Base* base) {
+function _ZN7testing8internal27CheckedDowncastToActualTypeINS0_11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE11ValueHolderENS0_26ThreadLocalValueHolderBaseEEEPT_PT0_ called 0 returned 0% blocks executed 0%
+    #####: 1509:Derived* CheckedDowncastToActualType(Base* base) {
         -: 1510:#if GTEST_HAS_RTTI
-       3*: 1511:  GTEST_CHECK_(typeid(*base) == typeid(Derived));
-        3: 1511-block  0
-branch  0 taken 3 (fallthrough)
-branch  1 taken 0
-        3: 1511-block  1
+    #####: 1511:  GTEST_CHECK_(typeid(*base) == typeid(Derived));
+    %%%%%: 1511-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%: 1511-block  1
     %%%%%: 1511-block  2
 call    2 never executed
-        3: 1511-block  3
-call    3 returned 3
-call    4 returned 3
-branch  5 taken 0 (fallthrough)
-branch  6 taken 3
+    %%%%%: 1511-block  3
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
     %%%%%: 1511-block  4
 call    7 never executed
 call    8 never executed
@@ -1944,35 +1944,35 @@ call   13 never executed
         -: 1514:#if GTEST_HAS_DOWNCAST_
         -: 1515:  return ::down_cast<Derived*>(base);
         -: 1516:#elif GTEST_HAS_RTTI
-       3*: 1517:  return dynamic_cast<Derived*>(base);  // NOLINT
-        3: 1517-block  0
-branch  0 taken 3 (fallthrough)
-branch  1 taken 0
-        3: 1517-block  1
+    #####: 1517:  return dynamic_cast<Derived*>(base);  // NOLINT
+    %%%%%: 1517-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%: 1517-block  1
     %%%%%: 1517-block  2
-        3: 1517-block  3
-        3: 1517-block  4
+    %%%%%: 1517-block  3
+    %%%%%: 1517-block  4
         -: 1518:#else
         -: 1519:  return static_cast<Derived*>(base);  // Poor man's downcast.
         -: 1520:#endif
         -: 1521:}
 ------------------
 _ZN7testing8internal27CheckedDowncastToActualTypeINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE11ValueHolderENS0_26ThreadLocalValueHolderBaseEEEPT_PT0_:
-function _ZN7testing8internal27CheckedDowncastToActualTypeINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE11ValueHolderENS0_26ThreadLocalValueHolderBaseEEEPT_PT0_ called 3 returned 100% blocks executed 53%
-        3: 1509:Derived* CheckedDowncastToActualType(Base* base) {
+function _ZN7testing8internal27CheckedDowncastToActualTypeINS0_11ThreadLocalISt6vectorINS0_9TraceInfoESaIS4_EEE11ValueHolderENS0_26ThreadLocalValueHolderBaseEEEPT_PT0_ called 0 returned 0% blocks executed 0%
+    #####: 1509:Derived* CheckedDowncastToActualType(Base* base) {
         -: 1510:#if GTEST_HAS_RTTI
-       3*: 1511:  GTEST_CHECK_(typeid(*base) == typeid(Derived));
-        3: 1511-block  0
-branch  0 taken 3 (fallthrough)
-branch  1 taken 0
-        3: 1511-block  1
+    #####: 1511:  GTEST_CHECK_(typeid(*base) == typeid(Derived));
+    %%%%%: 1511-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%: 1511-block  1
     %%%%%: 1511-block  2
 call    2 never executed
-        3: 1511-block  3
-call    3 returned 3
-call    4 returned 3
-branch  5 taken 0 (fallthrough)
-branch  6 taken 3
+    %%%%%: 1511-block  3
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
     %%%%%: 1511-block  4
 call    7 never executed
 call    8 never executed
@@ -1988,14 +1988,14 @@ call   13 never executed
         -: 1514:#if GTEST_HAS_DOWNCAST_
         -: 1515:  return ::down_cast<Derived*>(base);
         -: 1516:#elif GTEST_HAS_RTTI
-       3*: 1517:  return dynamic_cast<Derived*>(base);  // NOLINT
-        3: 1517-block  0
-branch  0 taken 3 (fallthrough)
-branch  1 taken 0
-        3: 1517-block  1
+    #####: 1517:  return dynamic_cast<Derived*>(base);  // NOLINT
+    %%%%%: 1517-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%: 1517-block  1
     %%%%%: 1517-block  2
-        3: 1517-block  3
-        3: 1517-block  4
+    %%%%%: 1517-block  3
+    %%%%%: 1517-block  4
         -: 1518:#else
         -: 1519:  return static_cast<Derived*>(base);  // Poor man's downcast.
         -: 1520:#endif
@@ -2523,13 +2523,13 @@ branch  1 taken 0
         -: 2041:class MutexBase {
         -: 2042: public:
         -: 2043:  // Acquires this mutex.
-function _ZN7testing8internal9MutexBase4LockEv called 8 returned 100% blocks executed 31%
-        8: 2044:  void Lock() {
-       8*: 2045:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_lock(&mutex_));
-        8: 2045-block  0
-call    0 returned 8
-branch  1 taken 0 (fallthrough)
-branch  2 taken 8
+function _ZN7testing8internal9MutexBase4LockEv called 0 returned 0% blocks executed 0%
+    #####: 2044:  void Lock() {
+    #####: 2045:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_lock(&mutex_));
+    %%%%%: 2045-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
     %%%%%: 2045-block  1
 call    3 never executed
 call    4 never executed
@@ -2548,24 +2548,24 @@ branch 13 never executed
 call   14 never executed
     $$$$$: 2045-block  5
 call   15 never executed
-        8: 2046:    owner_ = pthread_self();
-        8: 2047:    has_owner_ = true;
-        8: 2048:  }
-        8: 2048-block  0
+    #####: 2046:    owner_ = pthread_self();
+    #####: 2047:    has_owner_ = true;
+    #####: 2048:  }
+    %%%%%: 2048-block  0
         -: 2049:
         -: 2050:  // Releases this mutex.
-function _ZN7testing8internal9MutexBase6UnlockEv called 8 returned 100% blocks executed 31%
-        8: 2051:  void Unlock() {
+function _ZN7testing8internal9MutexBase6UnlockEv called 0 returned 0% blocks executed 0%
+    #####: 2051:  void Unlock() {
         -: 2052:    // Since the lock is being released the owner_ field should no longer be
         -: 2053:    // considered valid. We don't protect writing to has_owner_ here, as it's
         -: 2054:    // the caller's responsibility to ensure that the current thread holds the
         -: 2055:    // mutex when this is called.
-        8: 2056:    has_owner_ = false;
-       8*: 2057:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_unlock(&mutex_));
-        8: 2057-block  0
-call    0 returned 8
-branch  1 taken 0 (fallthrough)
-branch  2 taken 8
+    #####: 2056:    has_owner_ = false;
+    #####: 2057:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_unlock(&mutex_));
+    %%%%%: 2057-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
     %%%%%: 2057-block  1
 call    3 never executed
 call    4 never executed
@@ -2584,8 +2584,8 @@ branch 13 never executed
 call   14 never executed
     $$$$$: 2057-block  5
 call   15 never executed
-        8: 2058:  }
-        8: 2058-block  0
+    #####: 2058:  }
+    %%%%%: 2058-block  0
         -: 2059:
         -: 2060:  // Does nothing if the current thread holds the mutex. Otherwise, crashes
         -: 2061:  // with high probability.
@@ -2628,13 +2628,13 @@ call   15 never executed
         -: 2098:// shares its API with MutexBase otherwise.
         -: 2099:class Mutex : public MutexBase {
         -: 2100: public:
-function _ZN7testing8internal5MutexC2Ev called 18 returned 100% blocks executed 31%
-       18: 2101:  Mutex() {
-      18*: 2102:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_init(&mutex_, NULL));
-       18: 2102-block  0
-call    0 returned 18
+function _ZN7testing8internal5MutexC2Ev called 21 returned 100% blocks executed 31%
+       21: 2101:  Mutex() {
+      21*: 2102:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_init(&mutex_, NULL));
+       21: 2102-block  0
+call    0 returned 21
 branch  1 taken 0 (fallthrough)
-branch  2 taken 18
+branch  2 taken 21
     %%%%%: 2102-block  1
 call    3 never executed
 call    4 never executed
@@ -2653,16 +2653,16 @@ branch 13 never executed
 call   14 never executed
     $$$$$: 2102-block  5
 call   15 never executed
-       18: 2103:    has_owner_ = false;
-       18: 2104:  }
-       18: 2104-block  0
-function _ZN7testing8internal5MutexD2Ev called 18 returned 100% blocks executed 30%
-       36: 2105:  ~Mutex() {
-      18*: 2106:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_destroy(&mutex_));
-       18: 2106-block  0
-call    0 returned 18
+       21: 2103:    has_owner_ = false;
+       21: 2104:  }
+       21: 2104-block  0
+function _ZN7testing8internal5MutexD2Ev called 21 returned 100% blocks executed 30%
+       42: 2105:  ~Mutex() {
+      21*: 2106:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_destroy(&mutex_));
+       21: 2106-block  0
+call    0 returned 21
 branch  1 taken 0 (fallthrough)
-branch  2 taken 18
+branch  2 taken 21
     %%%%%: 2106-block  1
 call    3 never executed
 call    4 never executed
@@ -2670,7 +2670,7 @@ call    5 never executed
 call    6 never executed
 call    7 never executed
 call    8 never executed
-       18: 2107:  }
+       21: 2107:  }
         -: 2108:
         -: 2109: private:
         -: 2110:  GTEST_DISALLOW_COPY_AND_ASSIGN_(Mutex);
@@ -2683,16 +2683,16 @@ call    8 never executed
         -: 2117:// "MutexLock l(&mu)".  Hence the typedef trick below.
         -: 2118:class GTestMutexLock {
         -: 2119: public:
-function _ZN7testing8internal14GTestMutexLockC2EPNS0_9MutexBaseE called 8 returned 100% blocks executed 100%
-        8: 2120:  explicit GTestMutexLock(MutexBase* mutex)
-        8: 2121:      : mutex_(mutex) { mutex_->Lock(); }
-        8: 2121-block  0
-call    0 returned 8
+function _ZN7testing8internal14GTestMutexLockC2EPNS0_9MutexBaseE called 0 returned 0% blocks executed 0%
+    #####: 2120:  explicit GTestMutexLock(MutexBase* mutex)
+    #####: 2121:      : mutex_(mutex) { mutex_->Lock(); }
+    %%%%%: 2121-block  0
+call    0 never executed
         -: 2122:
-function _ZN7testing8internal14GTestMutexLockD2Ev called 8 returned 100% blocks executed 100%
-        8: 2123:  ~GTestMutexLock() { mutex_->Unlock(); }
-        8: 2123-block  0
-call    0 returned 8
+function _ZN7testing8internal14GTestMutexLockD2Ev called 0 returned 0% blocks executed 0%
+    #####: 2123:  ~GTestMutexLock() { mutex_->Unlock(); }
+    %%%%%: 2123-block  0
+call    0 never executed
         -: 2124:
         -: 2125: private:
         -: 2126:  MutexBase* const mutex_;
@@ -2710,7 +2710,7 @@ call    0 returned 8
         -: 2138:// ThreadLocalValueHolderBase.
         -: 2139:class ThreadLocalValueHolderBase {
         -: 2140: public:
-       2*: 2141:  virtual ~ThreadLocalValueHolderBase() {}
+    #####: 2141:  virtual ~ThreadLocalValueHolderBase() {}
 ------------------
 _ZN7testing8internal26ThreadLocalValueHolderBaseD0Ev:
 function _ZN7testing8internal26ThreadLocalValueHolderBaseD0Ev called 0 returned 0% blocks executed 0%
@@ -2720,21 +2720,21 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZN7testing8internal26ThreadLocalValueHolderBaseD2Ev:
-function _ZN7testing8internal26ThreadLocalValueHolderBaseD2Ev called 2 returned 100% blocks executed 100%
-        2: 2141:  virtual ~ThreadLocalValueHolderBase() {}
+function _ZN7testing8internal26ThreadLocalValueHolderBaseD2Ev called 0 returned 0% blocks executed 0%
+    #####: 2141:  virtual ~ThreadLocalValueHolderBase() {}
 ------------------
         -: 2142:};
         -: 2143:
         -: 2144:// Called by pthread to delete thread-local data stored by
         -: 2145:// pthread_setspecific().
-function DeleteThreadLocalValue called 2 returned 100% blocks executed 100%
+function DeleteThreadLocalValue called 2 returned 100% blocks executed 67%
         2: 2146:extern "C" inline void DeleteThreadLocalValue(void* value_holder) {
-        2: 2147:  delete static_cast<ThreadLocalValueHolderBase*>(value_holder);
+       2*: 2147:  delete static_cast<ThreadLocalValueHolderBase*>(value_holder);
         2: 2147-block  0
-branch  0 taken 2 (fallthrough)
-branch  1 taken 0
-        2: 2147-block  1
-call    2 returned 2
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    %%%%%: 2147-block  1
+call    2 never executed
         2: 2148:}
         -: 2149:
         -: 2150:// Implements thread-local storage on pthreads-based systems.
@@ -2831,7 +2831,7 @@ call    8 never executed
 call    0 returned 1
 ------------------
         -: 2168:
-       4*: 2169:  T* pointer() { return GetOrCreateValue(); }
+    #####: 2169:  T* pointer() { return GetOrCreateValue(); }
 ------------------
 _ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE7pointerEv:
 function _ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE7pointerEv called 0 returned 0% blocks executed 0%
@@ -2840,19 +2840,19 @@ function _ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterface
 call    0 never executed
 ------------------
 _ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE7pointerEv:
-function _ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE7pointerEv called 4 returned 100% blocks executed 100%
-        4: 2169:  T* pointer() { return GetOrCreateValue(); }
-        4: 2169-block  0
-call    0 returned 4
+function _ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE7pointerEv called 0 returned 0% blocks executed 0%
+    #####: 2169:  T* pointer() { return GetOrCreateValue(); }
+    %%%%%: 2169-block  0
+call    0 never executed
 ------------------
-function _ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE7pointerEv called 4 returned 100% blocks executed 100%
-        4: 2170:  const T* pointer() const { return GetOrCreateValue(); }
-        4: 2170-block  0
-call    0 returned 4
-function _ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE3getEv called 4 returned 100% blocks executed 100%
-        4: 2171:  const T& get() const { return *pointer(); }
-        4: 2171-block  0
-call    0 returned 4
+function _ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE7pointerEv called 0 returned 0% blocks executed 0%
+    #####: 2170:  const T* pointer() const { return GetOrCreateValue(); }
+    %%%%%: 2170-block  0
+call    0 never executed
+function _ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE3getEv called 0 returned 0% blocks executed 0%
+    #####: 2171:  const T& get() const { return *pointer(); }
+    %%%%%: 2171-block  0
+call    0 never executed
 function _ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE3setERKS3_ called 0 returned 0% blocks executed 0%
     #####: 2172:  void set(const T& value) { *pointer() = value; }
     %%%%%: 2172-block  0
@@ -2862,27 +2862,27 @@ call    0 never executed
         -: 2175:  // Holds a value of type T.
         -: 2176:  class ValueHolder : public ThreadLocalValueHolderBase {
         -: 2177:   public:
-function _ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE11ValueHolderC2Ev called 1 returned 100% blocks executed 100%
-        1: 2178:    ValueHolder() : value_() {}
-        1: 2178-block  0
-call    0 returned 1
-call    1 returned 1
-function _ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE11ValueHolderC2ERKS3_ called 1 returned 100% blocks executed 100%
-        1: 2179:    explicit ValueHolder(const T& value) : value_(value) {}
-        1: 2179-block  0
-call    0 returned 1
+function _ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE11ValueHolderC2Ev called 0 returned 0% blocks executed 0%
+    #####: 2178:    ValueHolder() : value_() {}
+    %%%%%: 2178-block  0
+call    0 never executed
+call    1 never executed
+function _ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE11ValueHolderC2ERKS3_ called 0 returned 0% blocks executed 0%
+    #####: 2179:    explicit ValueHolder(const T& value) : value_(value) {}
+    %%%%%: 2179-block  0
+call    0 never executed
         -: 2180:
-        8: 2181:    T* pointer() { return &value_; }
+    #####: 2181:    T* pointer() { return &value_; }
 ------------------
 _ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE11ValueHolder7pointerEv:
-function _ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE11ValueHolder7pointerEv called 4 returned 100% blocks executed 100%
-        4: 2181:    T* pointer() { return &value_; }
-        4: 2181-block  0
+function _ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE11ValueHolder7pointerEv called 0 returned 0% blocks executed 0%
+    #####: 2181:    T* pointer() { return &value_; }
+    %%%%%: 2181-block  0
 ------------------
 _ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE11ValueHolder7pointerEv:
-function _ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE11ValueHolder7pointerEv called 4 returned 100% blocks executed 100%
-        4: 2181:    T* pointer() { return &value_; }
-        4: 2181-block  0
+function _ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE11ValueHolder7pointerEv called 0 returned 0% blocks executed 0%
+    #####: 2181:    T* pointer() { return &value_; }
+    %%%%%: 2181-block  0
 ------------------
         -: 2182:
         -: 2183:   private:
@@ -2978,44 +2978,44 @@ call   17 never executed
         -: 2195:  }
 ------------------
         -: 2196:
-        8: 2197:  T* GetOrCreateValue() const {
+    #####: 2197:  T* GetOrCreateValue() const {
         -: 2198:    ThreadLocalValueHolderBase* const holder =
-        8: 2199:        static_cast<ThreadLocalValueHolderBase*>(pthread_getspecific(key_));
-        8: 2200:    if (holder != NULL) {
-        6: 2201:      return CheckedDowncastToActualType<ValueHolder>(holder)->pointer();
+    #####: 2199:        static_cast<ThreadLocalValueHolderBase*>(pthread_getspecific(key_));
+    #####: 2200:    if (holder != NULL) {
+    #####: 2201:      return CheckedDowncastToActualType<ValueHolder>(holder)->pointer();
         -: 2202:    }
         -: 2203:
-        2: 2204:    ValueHolder* const new_holder = default_factory_->MakeNewHolder();
-        2: 2205:    ThreadLocalValueHolderBase* const holder_base = new_holder;
-       2*: 2206:    GTEST_CHECK_POSIX_SUCCESS_(pthread_setspecific(key_, holder_base));
-        2: 2207:    return new_holder->pointer();
+    #####: 2204:    ValueHolder* const new_holder = default_factory_->MakeNewHolder();
+    #####: 2205:    ThreadLocalValueHolderBase* const holder_base = new_holder;
+    #####: 2206:    GTEST_CHECK_POSIX_SUCCESS_(pthread_setspecific(key_, holder_base));
+    #####: 2207:    return new_holder->pointer();
         -: 2208:  }
 ------------------
 _ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv:
-function _ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv called 4 returned 100% blocks executed 55%
-        4: 2197:  T* GetOrCreateValue() const {
+function _ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv called 0 returned 0% blocks executed 0%
+    #####: 2197:  T* GetOrCreateValue() const {
         -: 2198:    ThreadLocalValueHolderBase* const holder =
-        4: 2199:        static_cast<ThreadLocalValueHolderBase*>(pthread_getspecific(key_));
-        4: 2199-block  0
-call    0 returned 4
-        4: 2200:    if (holder != NULL) {
-branch  0 taken 3 (fallthrough)
-branch  1 taken 1
-        3: 2201:      return CheckedDowncastToActualType<ValueHolder>(holder)->pointer();
-        3: 2201-block  0
-call    0 returned 3
-call    1 returned 3
+    #####: 2199:        static_cast<ThreadLocalValueHolderBase*>(pthread_getspecific(key_));
+    %%%%%: 2199-block  0
+call    0 never executed
+    #####: 2200:    if (holder != NULL) {
+branch  0 never executed
+branch  1 never executed
+    #####: 2201:      return CheckedDowncastToActualType<ValueHolder>(holder)->pointer();
+    %%%%%: 2201-block  0
+call    0 never executed
+call    1 never executed
         -: 2202:    }
         -: 2203:
-        1: 2204:    ValueHolder* const new_holder = default_factory_->MakeNewHolder();
-        1: 2204-block  0
-call    0 returned 1
-call    1 returned 1
-        1: 2205:    ThreadLocalValueHolderBase* const holder_base = new_holder;
-       1*: 2206:    GTEST_CHECK_POSIX_SUCCESS_(pthread_setspecific(key_, holder_base));
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####: 2204:    ValueHolder* const new_holder = default_factory_->MakeNewHolder();
+    %%%%%: 2204-block  0
+call    0 never executed
+call    1 never executed
+    #####: 2205:    ThreadLocalValueHolderBase* const holder_base = new_holder;
+    #####: 2206:    GTEST_CHECK_POSIX_SUCCESS_(pthread_setspecific(key_, holder_base));
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
     %%%%%: 2206-block  0
 call    3 never executed
 call    4 never executed
@@ -3034,36 +3034,36 @@ branch 13 never executed
 call   14 never executed
     $$$$$: 2206-block  4
 call   15 never executed
-        1: 2207:    return new_holder->pointer();
-        1: 2207-block  0
-call    0 returned 1
+    #####: 2207:    return new_holder->pointer();
+    %%%%%: 2207-block  0
+call    0 never executed
         -: 2208:  }
 ------------------
 _ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv:
-function _ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv called 4 returned 100% blocks executed 55%
-        4: 2197:  T* GetOrCreateValue() const {
+function _ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv called 0 returned 0% blocks executed 0%
+    #####: 2197:  T* GetOrCreateValue() const {
         -: 2198:    ThreadLocalValueHolderBase* const holder =
-        4: 2199:        static_cast<ThreadLocalValueHolderBase*>(pthread_getspecific(key_));
-        4: 2199-block  0
-call    0 returned 4
-        4: 2200:    if (holder != NULL) {
-branch  0 taken 3 (fallthrough)
-branch  1 taken 1
-        3: 2201:      return CheckedDowncastToActualType<ValueHolder>(holder)->pointer();
-        3: 2201-block  0
-call    0 returned 3
-call    1 returned 3
+    #####: 2199:        static_cast<ThreadLocalValueHolderBase*>(pthread_getspecific(key_));
+    %%%%%: 2199-block  0
+call    0 never executed
+    #####: 2200:    if (holder != NULL) {
+branch  0 never executed
+branch  1 never executed
+    #####: 2201:      return CheckedDowncastToActualType<ValueHolder>(holder)->pointer();
+    %%%%%: 2201-block  0
+call    0 never executed
+call    1 never executed
         -: 2202:    }
         -: 2203:
-        1: 2204:    ValueHolder* const new_holder = default_factory_->MakeNewHolder();
-        1: 2204-block  0
-call    0 returned 1
-call    1 returned 1
-        1: 2205:    ThreadLocalValueHolderBase* const holder_base = new_holder;
-       1*: 2206:    GTEST_CHECK_POSIX_SUCCESS_(pthread_setspecific(key_, holder_base));
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####: 2204:    ValueHolder* const new_holder = default_factory_->MakeNewHolder();
+    %%%%%: 2204-block  0
+call    0 never executed
+call    1 never executed
+    #####: 2205:    ThreadLocalValueHolderBase* const holder_base = new_holder;
+    #####: 2206:    GTEST_CHECK_POSIX_SUCCESS_(pthread_setspecific(key_, holder_base));
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
     %%%%%: 2206-block  0
 call    3 never executed
 call    4 never executed
@@ -3082,9 +3082,9 @@ branch 13 never executed
 call   14 never executed
     $$$$$: 2206-block  4
 call   15 never executed
-        1: 2207:    return new_holder->pointer();
-        1: 2207-block  0
-call    0 returned 1
+    #####: 2207:    return new_holder->pointer();
+    %%%%%: 2207-block  0
+call    0 never executed
         -: 2208:  }
 ------------------
         -: 2209:
@@ -3136,11 +3136,11 @@ function _ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE25D
         1: 2222:    DefaultValueHolderFactory() {}
         1: 2222-block  0
 call    0 returned 1
-function _ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE25DefaultValueHolderFactory13MakeNewHolderEv called 1 returned 100% blocks executed 100%
-        1: 2223:    virtual ValueHolder* MakeNewHolder() const { return new ValueHolder(); }
-        1: 2223-block  0
-call    0 returned 1
-call    1 returned 1
+function _ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE25DefaultValueHolderFactory13MakeNewHolderEv called 0 returned 0% blocks executed 0%
+    #####: 2223:    virtual ValueHolder* MakeNewHolder() const { return new ValueHolder(); }
+    %%%%%: 2223-block  0
+call    0 never executed
+call    1 never executed
         -: 2224:
         -: 2225:   private:
         -: 2226:    GTEST_DISALLOW_COPY_AND_ASSIGN_(DefaultValueHolderFactory);
@@ -3152,12 +3152,12 @@ function _ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterface
         1: 2231:    explicit InstanceValueHolderFactory(const T& value) : value_(value) {}
         1: 2231-block  0
 call    0 returned 1
-function _ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE26InstanceValueHolderFactory13MakeNewHolderEv called 1 returned 100% blocks executed 100%
-        1: 2232:    virtual ValueHolder* MakeNewHolder() const {
-        1: 2233:      return new ValueHolder(value_);
-        1: 2233-block  0
-call    0 returned 1
-call    1 returned 1
+function _ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE26InstanceValueHolderFactory13MakeNewHolderEv called 0 returned 0% blocks executed 0%
+    #####: 2232:    virtual ValueHolder* MakeNewHolder() const {
+    #####: 2233:      return new ValueHolder(value_);
+    %%%%%: 2233-block  0
+call    0 never executed
+call    1 never executed
         -: 2234:    }
         -: 2235:
         -: 2236:   private:

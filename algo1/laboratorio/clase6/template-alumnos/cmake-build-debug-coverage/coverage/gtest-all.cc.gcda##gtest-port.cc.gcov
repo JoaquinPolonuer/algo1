@@ -1031,28 +1031,28 @@ call    2 never executed
         -:  869:
         -:  870:// Formats a source file path and a line number as they would appear
         -:  871:// in an error message from the compiler used to compile this code.
-function _ZN7testing8internal18FormatFileLocationB5cxx11EPKci called 4 returned 100% blocks executed 53%
-        4:  872:GTEST_API_ ::std::string FormatFileLocation(const char* file, int line) {
-       8*:  873:  const std::string file_name(file == NULL ? kUnknownFile : file);
-        4:  873-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0
-        4:  873-block  1
+function _ZN7testing8internal18FormatFileLocationB5cxx11EPKci called 0 returned 0% blocks executed 0%
+    #####:  872:GTEST_API_ ::std::string FormatFileLocation(const char* file, int line) {
+    #####:  873:  const std::string file_name(file == NULL ? kUnknownFile : file);
+    %%%%%:  873-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  873-block  1
     %%%%%:  873-block  2
-        4:  873-block  3
-call    3 returned 4
-branch  4 taken 4 (fallthrough)
-branch  5 taken 0 (throw)
-        4:  873-block  4
-call    6 returned 4
+    %%%%%:  873-block  3
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  873-block  4
+call    6 never executed
     $$$$$:  873-block  5
     $$$$$:  873-block  6
 call    7 never executed
         -:  874:
-        4:  875:  if (line < 0) {
-branch  0 taken 0 (fallthrough)
-branch  1 taken 4
+    #####:  875:  if (line < 0) {
+branch  0 never executed
+branch  1 never executed
     #####:  876:    return file_name + ":";
     %%%%%:  876-block  0
 call    0 never executed
@@ -1062,27 +1062,27 @@ branch  2 never executed
         -:  878:#ifdef _MSC_VER
         -:  879:  return file_name + "(" + StreamableToString(line) + "):";
         -:  880:#else
-        8:  881:  return file_name + ":" + StreamableToString(line) + ":";
-        4:  881-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0 (throw)
-        4:  881-block  1
-call    3 returned 4
-branch  4 taken 4 (fallthrough)
-branch  5 taken 0 (throw)
-        4:  881-block  2
-call    6 returned 4
-branch  7 taken 4 (fallthrough)
-branch  8 taken 0 (throw)
-        4:  881-block  3
-call    9 returned 4
-branch 10 taken 4 (fallthrough)
-branch 11 taken 0 (throw)
-        4:  881-block  4
-call   12 returned 4
-call   13 returned 4
-call   14 returned 4
+    #####:  881:  return file_name + ":" + StreamableToString(line) + ":";
+    %%%%%:  881-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  881-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  881-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  881-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  881-block  4
+call   12 never executed
+call   13 never executed
+call   14 never executed
     $$$$$:  881-block  5
 call   15 never executed
     $$$$$:  881-block  6

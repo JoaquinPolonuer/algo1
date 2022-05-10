@@ -36,6 +36,24 @@ TEST(llenarTaxis2Test, g1Mayor) {
     // lleno 1 con dos grupos de 1
 }
 
+TEST(llenarTaxis2Test, g1Mayor_2) {
+    int result = llenarTaxis2(5,2,1);
+
+    EXPECT_EQ(result,3);
+    // lleno 1 juntando un grupo de 3 + uno de 1
+    // lleno 1 con 2 grupos de 2
+    // lleno 1 con un grupo de 1
+}
+
+TEST(llenarTaxis2Test, g1Mayor_3) {
+    int result = llenarTaxis2(1,2,5);
+
+    EXPECT_EQ(result,6);
+    // lleno 1 juntando un grupo de 3 + uno de 1
+    // lleno 1 con 2 grupos de 2
+    // lleno 4 con 4 grupos de 3
+}
+
 //TESTING CASO 3 ---------------------------------------------------------------------
 
 TEST(llenarTaxis3Test, modResta1o2) {
@@ -52,7 +70,7 @@ TEST(llenarTaxis3Test, modRestaNo1o2) {
                 // 1 + llenarTaxis3(3,3,0)
                 // 2 + llenarTaxis(3,1,0)
                 // 3 + llenarTaxis(1,0,0)
-    EXPECT_EQ(result,3);
+    EXPECT_EQ(result,4);
     // 1 para un grupo de 1 y uno de 3
     // 1 para 2 grupos de 2
     // 1 para un grupo de 2 y los 2 que sobran
@@ -77,4 +95,11 @@ TEST(llenarTaxis3Test, modRestaNo1o2_3) {
     EXPECT_EQ(result,2);
             // 1 para el grupo de 2 y 2 grupos de 1
             // 1 para 3 grupos de 1
+}
+
+TEST(llenarTaxis3Test, modRestaNo1o2_4) {
+    int result = llenarTaxis3(3,1,5);
+
+    EXPECT_EQ(result,6);
+    // espero que ande
 }

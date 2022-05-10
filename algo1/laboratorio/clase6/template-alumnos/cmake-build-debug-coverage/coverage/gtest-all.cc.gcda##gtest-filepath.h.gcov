@@ -144,10 +144,10 @@ call    0 never executed
         -:  107:                                         const char* extension);
         -:  108:
         -:  109:  // Returns true iff the path is "".
-function _ZNK7testing8internal8FilePath7IsEmptyEv called 12 returned 100% blocks executed 100%
-       12:  110:  bool IsEmpty() const { return pathname_.empty(); }
-       12:  110-block  0
-call    0 returned 12
+function _ZNK7testing8internal8FilePath7IsEmptyEv called 15 returned 100% blocks executed 100%
+       15:  110:  bool IsEmpty() const { return pathname_.empty(); }
+       15:  110-block  0
+call    0 returned 15
         -:  111:
         -:  112:  // If input name has a trailing separator character, removes it and returns
         -:  113:  // the name, otherwise return the name string unmodified.

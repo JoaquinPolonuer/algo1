@@ -287,15 +287,15 @@
         -:  283:  // the argument is implicitly convertible to AssertionResult. In that case
         -:  284:  // we want AssertionResult's copy constructor to be used.
         -:  285:  template <typename T>
-function _ZN7testing15AssertionResultC2IbEERKT_PNS_8internal8EnableIfIXntsrNS5_21ImplicitlyConvertibleIS2_S0_EE5valueEE4typeE called 11 returned 100% blocks executed 100%
-       11:  286:  explicit AssertionResult(
+function _ZN7testing15AssertionResultC2IbEERKT_PNS_8internal8EnableIfIXntsrNS5_21ImplicitlyConvertibleIS2_S0_EE5valueEE4typeE called 14 returned 100% blocks executed 100%
+       14:  286:  explicit AssertionResult(
         -:  287:      const T& success,
         -:  288:      typename internal::EnableIf<
         -:  289:          !internal::ImplicitlyConvertible<T, AssertionResult>::value>::type*
         -:  290:          /*enabler*/ = NULL)
-       11:  291:      : success_(success) {}
-       11:  291-block  0
-call    0 returned 11
+       14:  291:      : success_(success) {}
+       14:  291-block  0
+call    0 returned 14
         -:  292:
         -:  293:#if defined(_MSC_VER) && _MSC_VER < 1910
         -:  294:  GTEST_DISABLE_MSC_WARNINGS_POP_()
@@ -308,9 +308,9 @@ call    0 returned 11
         -:  301:  }
         -:  302:
         -:  303:  // Returns true iff the assertion succeeded.
-function _ZNK7testing15AssertionResultcvbEv called 11 returned 100% blocks executed 100%
-       11:  304:  operator bool() const { return success_; }  // NOLINT
-       11:  304-block  0
+function _ZNK7testing15AssertionResultcvbEv called 14 returned 100% blocks executed 100%
+       14:  304:  operator bool() const { return success_; }  // NOLINT
+       14:  304-block  0
         -:  305:
         -:  306:  // Returns the assertion's negation. Used with EXPECT/ASSERT_FALSE.
         -:  307:  AssertionResult operator!() const;

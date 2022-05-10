@@ -113,44 +113,44 @@
         -:  109:  /// This is an overload used by find algos for the RAI case.
         -:  110:  template<typename _RandomAccessIterator, typename _Predicate>
         -:  111:    _RandomAccessIterator
-      11*:  112:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
+      14*:  112:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -:  113:	      _Predicate __pred, random_access_iterator_tag)
         -:  114:    {
         -:  115:      typename iterator_traits<_RandomAccessIterator>::difference_type
-      11*:  116:	__trip_count = (__last - __first) >> 2;
+      14*:  116:	__trip_count = (__last - __first) >> 2;
         -:  117:
-      11*:  118:      for (; __trip_count > 0; --__trip_count)
+      14*:  118:      for (; __trip_count > 0; --__trip_count)
         -:  119:	{
-       3*:  120:	  if (__pred(__first))
+       4*:  120:	  if (__pred(__first))
     #####:  121:	    return __first;
-       3*:  122:	  ++__first;
+       4*:  122:	  ++__first;
         -:  123:
-       3*:  124:	  if (__pred(__first))
+       4*:  124:	  if (__pred(__first))
     #####:  125:	    return __first;
-       3*:  126:	  ++__first;
+       4*:  126:	  ++__first;
         -:  127:
-       3*:  128:	  if (__pred(__first))
+       4*:  128:	  if (__pred(__first))
     #####:  129:	    return __first;
-       3*:  130:	  ++__first;
+       4*:  130:	  ++__first;
         -:  131:
-       3*:  132:	  if (__pred(__first))
-       3*:  133:	    return __first;
+       4*:  132:	  if (__pred(__first))
+       4*:  133:	    return __first;
     #####:  134:	  ++__first;
         -:  135:	}
         -:  136:
-       8*:  137:      switch (__last - __first)
+      10*:  137:      switch (__last - __first)
         -:  138:	{
-       2*:  139:	case 3:
-       2*:  140:	  if (__pred(__first))
+       4*:  139:	case 3:
+       4*:  140:	  if (__pred(__first))
     #####:  141:	    return __first;
-       2*:  142:	  ++__first;
-       4*:  143:	case 2:
-       4*:  144:	  if (__pred(__first))
+       4*:  142:	  ++__first;
+       6*:  143:	case 2:
+       6*:  144:	  if (__pred(__first))
     #####:  145:	    return __first;
-       4*:  146:	  ++__first;
-       7*:  147:	case 1:
-       7*:  148:	  if (__pred(__first))
-       4*:  149:	    return __first;
+       6*:  146:	  ++__first;
+       9*:  147:	case 1:
+       9*:  148:	  if (__pred(__first))
+       6*:  149:	    return __first;
        3*:  150:	  ++__first;
        4*:  151:	case 0:
         -:  152:	default:
@@ -159,100 +159,100 @@
         -:  155:    }
 ------------------
 _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPPN7testing8TestCaseESt6vectorIS4_SaIS4_EEEENS0_5__ops10_Iter_predINS2_8internal14TestCaseNameIsEEEET_SF_SF_T0_St26random_access_iterator_tag:
-function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPPN7testing8TestCaseESt6vectorIS4_SaIS4_EEEENS0_5__ops10_Iter_predINS2_8internal14TestCaseNameIsEEEET_SF_SF_T0_St26random_access_iterator_tag called 11 returned 100% blocks executed 81%
-       11:  112:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
+function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPPN7testing8TestCaseESt6vectorIS4_SaIS4_EEEENS0_5__ops10_Iter_predINS2_8internal14TestCaseNameIsEEEET_SF_SF_T0_St26random_access_iterator_tag called 14 returned 100% blocks executed 81%
+       14:  112:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -:  113:	      _Predicate __pred, random_access_iterator_tag)
         -:  114:    {
         -:  115:      typename iterator_traits<_RandomAccessIterator>::difference_type
-       11:  116:	__trip_count = (__last - __first) >> 2;
-       11:  116-block  0
-call    0 returned 11
+       14:  116:	__trip_count = (__last - __first) >> 2;
+       14:  116-block  0
+call    0 returned 14
         -:  117:
-      11*:  118:      for (; __trip_count > 0; --__trip_count)
-       11:  118-block  0
-branch  0 taken 3 (fallthrough)
-branch  1 taken 8
+      14*:  118:      for (; __trip_count > 0; --__trip_count)
+       14:  118-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 10
         -:  119:	{
-        3:  120:	  if (__pred(__first))
-        3:  120-block  0
-call    0 returned 3
+        4:  120:	  if (__pred(__first))
+        4:  120-block  0
+call    0 returned 4
 branch  1 taken 0 (fallthrough)
-branch  2 taken 3
+branch  2 taken 4
     #####:  121:	    return __first;
     %%%%%:  121-block  0
-        3:  122:	  ++__first;
-        3:  122-block  0
-call    0 returned 3
+        4:  122:	  ++__first;
+        4:  122-block  0
+call    0 returned 4
         -:  123:
-        3:  124:	  if (__pred(__first))
-call    0 returned 3
+        4:  124:	  if (__pred(__first))
+call    0 returned 4
 branch  1 taken 0 (fallthrough)
-branch  2 taken 3
+branch  2 taken 4
     #####:  125:	    return __first;
     %%%%%:  125-block  0
-        3:  126:	  ++__first;
-        3:  126-block  0
-call    0 returned 3
+        4:  126:	  ++__first;
+        4:  126-block  0
+call    0 returned 4
         -:  127:
-        3:  128:	  if (__pred(__first))
-call    0 returned 3
+        4:  128:	  if (__pred(__first))
+call    0 returned 4
 branch  1 taken 0 (fallthrough)
-branch  2 taken 3
+branch  2 taken 4
     #####:  129:	    return __first;
     %%%%%:  129-block  0
-        3:  130:	  ++__first;
-        3:  130-block  0
-call    0 returned 3
+        4:  130:	  ++__first;
+        4:  130-block  0
+call    0 returned 4
         -:  131:
-        3:  132:	  if (__pred(__first))
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
+        4:  132:	  if (__pred(__first))
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
 branch  2 taken 0
-        3:  133:	    return __first;
-        3:  133-block  0
+        4:  133:	    return __first;
+        4:  133-block  0
     #####:  134:	  ++__first;
     %%%%%:  134-block  0
 call    0 never executed
         -:  135:	}
         -:  136:
-        8:  137:      switch (__last - __first)
-        8:  137-block  0
-call    0 returned 8
-branch  1 taken 2
+       10:  137:      switch (__last - __first)
+       10:  137-block  0
+call    0 returned 10
+branch  1 taken 4
 branch  2 taken 2
 branch  3 taken 3
 branch  4 taken 1
         -:  138:	{
-        2:  139:	case 3:
-        2:  140:	  if (__pred(__first))
-        2:  140-block  0
-call    0 returned 2
-branch  1 taken 0 (fallthrough)
-branch  2 taken 2
-    #####:  141:	    return __first;
-    %%%%%:  141-block  0
-        2:  142:	  ++__first;
-        2:  142-block  0
-call    0 returned 2
-        4:  143:	case 2:
-        4:  144:	  if (__pred(__first))
-        4:  144-block  0
+        4:  139:	case 3:
+        4:  140:	  if (__pred(__first))
+        4:  140-block  0
 call    0 returned 4
 branch  1 taken 0 (fallthrough)
 branch  2 taken 4
+    #####:  141:	    return __first;
+    %%%%%:  141-block  0
+        4:  142:	  ++__first;
+        4:  142-block  0
+call    0 returned 4
+        6:  143:	case 2:
+        6:  144:	  if (__pred(__first))
+        6:  144-block  0
+call    0 returned 6
+branch  1 taken 0 (fallthrough)
+branch  2 taken 6
     #####:  145:	    return __first;
     %%%%%:  145-block  0
-        4:  146:	  ++__first;
-        4:  146-block  0
-call    0 returned 4
-        7:  147:	case 1:
-        7:  148:	  if (__pred(__first))
-        7:  148-block  0
-call    0 returned 7
-branch  1 taken 4 (fallthrough)
+        6:  146:	  ++__first;
+        6:  146-block  0
+call    0 returned 6
+        9:  147:	case 1:
+        9:  148:	  if (__pred(__first))
+        9:  148-block  0
+call    0 returned 9
+branch  1 taken 6 (fallthrough)
 branch  2 taken 3
-        4:  149:	    return __first;
-        4:  149-block  0
+        6:  149:	    return __first;
+        6:  149-block  0
         3:  150:	  ++__first;
         3:  150-block  0
 call    0 returned 3
@@ -476,34 +476,34 @@ call    0 never executed
         -:  156:
         -:  157:  template<typename _Iterator, typename _Predicate>
         -:  158:    inline _Iterator
-      11*:  159:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
+      14*:  159:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
         -:  160:    {
-      22*:  161:      return __find_if(__first, __last, __pred,
-      33*:  162:		       std::__iterator_category(__first));
+      28*:  161:      return __find_if(__first, __last, __pred,
+      42*:  162:		       std::__iterator_category(__first));
         -:  163:    }
 ------------------
 _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPPN7testing8TestCaseESt6vectorIS4_SaIS4_EEEENS0_5__ops10_Iter_predINS2_8internal14TestCaseNameIsEEEET_SF_SF_T0_:
-function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPPN7testing8TestCaseESt6vectorIS4_SaIS4_EEEENS0_5__ops10_Iter_predINS2_8internal14TestCaseNameIsEEEET_SF_SF_T0_ called 11 returned 100% blocks executed 73%
-       11:  159:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
+function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPPN7testing8TestCaseESt6vectorIS4_SaIS4_EEEENS0_5__ops10_Iter_predINS2_8internal14TestCaseNameIsEEEET_SF_SF_T0_ called 14 returned 100% blocks executed 73%
+       14:  159:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
         -:  160:    {
-       22:  161:      return __find_if(__first, __last, __pred,
-call    0 returned 11
-branch  1 taken 11 (fallthrough)
+       28:  161:      return __find_if(__first, __last, __pred,
+call    0 returned 14
+branch  1 taken 14 (fallthrough)
 branch  2 taken 0 (throw)
-       11:  161-block  0
-call    3 returned 11
-branch  4 taken 11 (fallthrough)
+       14:  161-block  0
+call    3 returned 14
+branch  4 taken 14 (fallthrough)
 branch  5 taken 0 (throw)
-       11:  161-block  1
-call    6 returned 11
+       14:  161-block  1
+call    6 returned 14
     $$$$$:  161-block  2
 call    7 never executed
     $$$$$:  161-block  3
-       33:  162:		       std::__iterator_category(__first));
-       11:  162-block  0
-call    0 returned 11
-       11:  162-block  1
-       11:  162-block  2
+       42:  162:		       std::__iterator_category(__first));
+       14:  162-block  0
+call    0 returned 14
+       14:  162-block  1
+       14:  162-block  2
         -:  163:    }
 ------------------
 _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEENS0_5__ops16_Iter_equals_valIS8_EEET_SH_SH_T0_:
@@ -4281,13 +4281,13 @@ branch  3 never executed
         -: 3873:  */
         -: 3874:  template<typename _InputIterator, typename _Function>
         -: 3875:    _Function
-       45: 3876:    for_each(_InputIterator __first, _InputIterator __last, _Function __f)
+       51: 3876:    for_each(_InputIterator __first, _InputIterator __last, _Function __f)
         -: 3877:    {
         -: 3878:      // concept requirements
         -: 3879:      __glibcxx_function_requires(_InputIteratorConcept<_InputIterator>)
         -: 3880:      __glibcxx_requires_valid_range(__first, __last);
-      45*: 3881:      for (; __first != __last; ++__first)
-      31*: 3882:	__f(*__first);
+      51*: 3881:      for (; __first != __last; ++__first)
+      37*: 3882:	__f(*__first);
        14: 3883:      return __f; // N.B. [alg.foreach] says std::move(f) but it's redundant.
         -: 3884:    }
 ------------------
@@ -4335,21 +4335,21 @@ call    1 returned 1
 ------------------
 _ZSt8for_eachIN9__gnu_cxx17__normal_iteratorIPKPN7testing8TestInfoESt6vectorIS4_SaIS4_EEEEPFvS4_EET0_T_SE_SD_:
 function _ZSt8for_eachIN9__gnu_cxx17__normal_iteratorIPKPN7testing8TestInfoESt6vectorIS4_SaIS4_EEEEPFvS4_EET0_T_SE_SD_ called 8 returned 100% blocks executed 100%
-       30: 3876:    for_each(_InputIterator __first, _InputIterator __last, _Function __f)
+       36: 3876:    for_each(_InputIterator __first, _InputIterator __last, _Function __f)
         -: 3877:    {
         -: 3878:      // concept requirements
         -: 3879:      __glibcxx_function_requires(_InputIteratorConcept<_InputIterator>)
         -: 3880:      __glibcxx_requires_valid_range(__first, __last);
-       30: 3881:      for (; __first != __last; ++__first)
-       30: 3881-block  0
-call    0 returned 30
-branch  1 taken 22 (fallthrough)
+       36: 3881:      for (; __first != __last; ++__first)
+       36: 3881-block  0
+call    0 returned 36
+branch  1 taken 28 (fallthrough)
 branch  2 taken 8
-call    3 returned 22
-       22: 3882:	__f(*__first);
-       22: 3882-block  0
-call    0 returned 22
-call    1 returned 22
+call    3 returned 28
+       28: 3882:	__f(*__first);
+       28: 3882-block  0
+call    0 returned 28
+call    1 returned 28
         8: 3883:      return __f; // N.B. [alg.foreach] says std::move(f) but it's redundant.
         8: 3883-block  0
         -: 3884:    }
@@ -4475,7 +4475,7 @@ call    1 never executed
         -: 3957:  */
         -: 3958:  template<typename _InputIterator, typename _Predicate>
         -: 3959:    inline _InputIterator
-      11*: 3960:    find_if(_InputIterator __first, _InputIterator __last,
+      14*: 3960:    find_if(_InputIterator __first, _InputIterator __last,
         -: 3961:	    _Predicate __pred)
         -: 3962:    {
         -: 3963:      // concept requirements
@@ -4484,8 +4484,8 @@ call    1 never executed
         -: 3966:	      typename iterator_traits<_InputIterator>::value_type>)
         -: 3967:      __glibcxx_requires_valid_range(__first, __last);
         -: 3968:
-      22*: 3969:      return std::__find_if(__first, __last,
-      22*: 3970:			    __gnu_cxx::__ops::__pred_iter(__pred));
+      28*: 3969:      return std::__find_if(__first, __last,
+      28*: 3970:			    __gnu_cxx::__ops::__pred_iter(__pred));
         -: 3971:    }
         -: 3972:
         -: 3973:  /**

@@ -61,38 +61,38 @@
         -:   57:  // C'tor.  TestPartResult does NOT have a default constructor.
         -:   58:  // Always use this constructor (with parameters) to create a
         -:   59:  // TestPartResult object.
-function _ZN7testing14TestPartResultC2ENS0_4TypeEPKciS3_ called 4 returned 100% blocks executed 52%
-        4:   60:  TestPartResult(Type a_type,
+function _ZN7testing14TestPartResultC2ENS0_4TypeEPKciS3_ called 0 returned 0% blocks executed 0%
+    #####:   60:  TestPartResult(Type a_type,
         -:   61:                 const char* a_file_name,
         -:   62:                 int a_line_number,
         -:   63:                 const char* a_message)
-        4:   64:      : type_(a_type),
+    #####:   64:      : type_(a_type),
         -:   65:        file_name_(a_file_name == NULL ? "" : a_file_name),
         -:   66:        line_number_(a_line_number),
         -:   67:        summary_(ExtractSummary(a_message)),
-       4*:   68:        message_(a_message) {
-        4:   68-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0
-        4:   68-block  1
+    #####:   68:        message_(a_message) {
+    %%%%%:   68-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   68-block  1
     %%%%%:   68-block  2
-        4:   68-block  3
-call    3 returned 4
-branch  4 taken 4 (fallthrough)
-branch  5 taken 0 (throw)
-        4:   68-block  4
-call    6 returned 4
-call    7 returned 4
-branch  8 taken 4 (fallthrough)
-branch  9 taken 0 (throw)
-        4:   68-block  5
-call   10 returned 4
-call   11 returned 4
-branch 12 taken 4 (fallthrough)
-branch 13 taken 0 (throw)
-        4:   68-block  6
-call   14 returned 4
+    %%%%%:   68-block  3
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   68-block  4
+call    6 never executed
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   68-block  5
+call   10 never executed
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   68-block  6
+call   14 never executed
     $$$$$:   68-block  7
 call   15 never executed
     $$$$$:   68-block  8
@@ -104,33 +104,33 @@ call   17 never executed
 call   18 never executed
     $$$$$:   68-block 12
 call   19 never executed
-        4:   69:  }
+    #####:   69:  }
         -:   70:
         -:   71:  // Gets the outcome of the test part.
-function _ZNK7testing14TestPartResult4typeEv called 8 returned 100% blocks executed 100%
-        8:   72:  Type type() const { return type_; }
-        8:   72-block  0
+function _ZNK7testing14TestPartResult4typeEv called 0 returned 0% blocks executed 0%
+    #####:   72:  Type type() const { return type_; }
+    %%%%%:   72-block  0
         -:   73:
         -:   74:  // Gets the name of the source file where the test part took place, or
         -:   75:  // NULL if it's unknown.
-function _ZNK7testing14TestPartResult9file_nameEv called 4 returned 100% blocks executed 83%
-        4:   76:  const char* file_name() const {
-       4*:   77:    return file_name_.empty() ? NULL : file_name_.c_str();
-        4:   77-block  0
-call    0 returned 4
-branch  1 taken 0 (fallthrough)
-branch  2 taken 4
+function _ZNK7testing14TestPartResult9file_nameEv called 0 returned 0% blocks executed 0%
+    #####:   76:  const char* file_name() const {
+    #####:   77:    return file_name_.empty() ? NULL : file_name_.c_str();
+    %%%%%:   77-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
     %%%%%:   77-block  1
-        4:   77-block  2
-call    3 returned 4
-        4:   77-block  3
+    %%%%%:   77-block  2
+call    3 never executed
+    %%%%%:   77-block  3
         -:   78:  }
         -:   79:
         -:   80:  // Gets the line in the source file where the test part took place,
         -:   81:  // or -1 if it's unknown.
-function _ZNK7testing14TestPartResult11line_numberEv called 4 returned 100% blocks executed 100%
-        4:   82:  int line_number() const { return line_number_; }
-        4:   82-block  0
+function _ZNK7testing14TestPartResult11line_numberEv called 0 returned 0% blocks executed 0%
+    #####:   82:  int line_number() const { return line_number_; }
+    %%%%%:   82-block  0
         -:   83:
         -:   84:  // Gets the summary of the failure message.
 function _ZNK7testing14TestPartResult7summaryEv called 0 returned 0% blocks executed 0%
@@ -139,18 +139,18 @@ function _ZNK7testing14TestPartResult7summaryEv called 0 returned 0% blocks exec
 call    0 never executed
         -:   86:
         -:   87:  // Gets the message associated with the test part.
-function _ZNK7testing14TestPartResult7messageEv called 4 returned 100% blocks executed 100%
-        4:   88:  const char* message() const { return message_.c_str(); }
-        4:   88-block  0
-call    0 returned 4
+function _ZNK7testing14TestPartResult7messageEv called 0 returned 0% blocks executed 0%
+    #####:   88:  const char* message() const { return message_.c_str(); }
+    %%%%%:   88-block  0
+call    0 never executed
         -:   89:
         -:   90:  // Returns true iff the test part passed.
         -:   91:  bool passed() const { return type_ == kSuccess; }
         -:   92:
         -:   93:  // Returns true iff the test part failed.
-function _ZNK7testing14TestPartResult6failedEv called 40 returned 100% blocks executed 100%
-       40:   94:  bool failed() const { return type_ != kSuccess; }
-       40:   94-block  0
+function _ZNK7testing14TestPartResult6failedEv called 0 returned 0% blocks executed 0%
+    #####:   94:  bool failed() const { return type_ != kSuccess; }
+    %%%%%:   94-block  0
         -:   95:
         -:   96:  // Returns true iff the test part non-fatally failed.
 function _ZNK7testing14TestPartResult17nonfatally_failedEv called 0 returned 0% blocks executed 0%

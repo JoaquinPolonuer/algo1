@@ -204,20 +204,20 @@ call    2 never executed
         -:  195:  template<typename _Tp>
         -:  196:    _GLIBCXX14_CONSTEXPR
         -:  197:    inline const _Tp&
-function _ZSt3minImERKT_S2_S2_ called 84 returned 100% blocks executed 75%
-       84:  198:    min(const _Tp& __a, const _Tp& __b)
+function _ZSt3minImERKT_S2_S2_ called 68 returned 100% blocks executed 75%
+       68:  198:    min(const _Tp& __a, const _Tp& __b)
         -:  199:    {
         -:  200:      // concept requirements
         -:  201:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  202:      //return __b < __a ? __b : __a;
-       84:  203:      if (__b < __a)
-       84:  203-block  0
+       68:  203:      if (__b < __a)
+       68:  203-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 84
+branch  1 taken 68
     #####:  204:	return __b;
     %%%%%:  204-block  0
-       84:  205:      return __a;
-       84:  205-block  0
+       68:  205:      return __a;
+       68:  205-block  0
         -:  206:    }
         -:  207:
         -:  208:  /**
@@ -234,20 +234,20 @@ branch  1 taken 84
         -:  219:  template<typename _Tp>
         -:  220:    _GLIBCXX14_CONSTEXPR
         -:  221:    inline const _Tp&
-function _ZSt3maxImERKT_S2_S2_ called 42 returned 100% blocks executed 100%
-       42:  222:    max(const _Tp& __a, const _Tp& __b)
+function _ZSt3maxImERKT_S2_S2_ called 34 returned 100% blocks executed 100%
+       34:  222:    max(const _Tp& __a, const _Tp& __b)
         -:  223:    {
         -:  224:      // concept requirements
         -:  225:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  226:      //return  __a < __b ? __b : __a;
-       42:  227:      if (__a < __b)
-       42:  227-block  0
-branch  0 taken 24 (fallthrough)
-branch  1 taken 18
-       24:  228:	return __b;
-       24:  228-block  0
-       18:  229:      return __a;
-       18:  229-block  0
+       34:  227:      if (__a < __b)
+       34:  227-block  0
+branch  0 taken 12 (fallthrough)
+branch  1 taken 22
+       12:  228:	return __b;
+       12:  228-block  0
+       22:  229:      return __a;
+       22:  229-block  0
         -:  230:    }
         -:  231:
         -:  232:  /**
@@ -298,16 +298,16 @@ branch  1 taken 18
         -:  277:  // remove the __normal_iterator wrapper. See copy, fill, ...
         -:  278:  template<typename _Iterator>
         -:  279:    inline _Iterator
-     252*:  280:    __niter_base(_Iterator __it)
+     204*:  280:    __niter_base(_Iterator __it)
         -:  281:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-     252*:  282:    { return __it; }
+     204*:  282:    { return __it; }
 ------------------
 _ZSt12__niter_baseIPiET_S1_:
-function _ZSt12__niter_baseIPiET_S1_ called 78 returned 100% blocks executed 100%
-       78:  280:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPiET_S1_ called 90 returned 100% blocks executed 100%
+       90:  280:    __niter_base(_Iterator __it)
         -:  281:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-       78:  282:    { return __it; }
-       78:  282-block  0
+       90:  282:    { return __it; }
+       90:  282-block  0
 ------------------
 _ZSt12__niter_baseIPmET_S1_:
 function _ZSt12__niter_baseIPmET_S1_ called 0 returned 0% blocks executed 0%
@@ -324,11 +324,11 @@ function _ZSt12__niter_baseIPdET_S1_ called 0 returned 0% blocks executed 0%
     %%%%%:  282-block  0
 ------------------
 _ZSt12__niter_baseIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_S7_:
-function _ZSt12__niter_baseIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_S7_ called 66 returned 100% blocks executed 100%
-       66:  280:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_S7_ called 18 returned 100% blocks executed 100%
+       18:  280:    __niter_base(_Iterator __it)
         -:  281:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-       66:  282:    { return __it; }
-       66:  282-block  0
+       18:  282:    { return __it; }
+       18:  282-block  0
 ------------------
 _ZSt12__niter_baseIPPcET_S2_:
 function _ZSt12__niter_baseIPPcET_S2_ called 0 returned 0% blocks executed 0%
@@ -359,11 +359,11 @@ function _ZSt12__niter_baseIPPN7testing17TestEventListenerEET_S4_ called 6 retur
         6:  282-block  0
 ------------------
 _ZSt12__niter_baseIPPN7testing8TestInfoEET_S4_:
-function _ZSt12__niter_baseIPPN7testing8TestInfoEET_S4_ called 60 returned 100% blocks executed 100%
-       60:  280:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPPN7testing8TestInfoEET_S4_ called 72 returned 100% blocks executed 100%
+       72:  280:    __niter_base(_Iterator __it)
         -:  281:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-       60:  282:    { return __it; }
-       60:  282-block  0
+       72:  282:    { return __it; }
+       72:  282-block  0
 ------------------
 _ZSt12__niter_baseIPN7testing12TestPropertyEET_S3_:
 function _ZSt12__niter_baseIPN7testing12TestPropertyEET_S3_ called 0 returned 0% blocks executed 0%
@@ -373,11 +373,11 @@ function _ZSt12__niter_baseIPN7testing12TestPropertyEET_S3_ called 0 returned 0%
     %%%%%:  282-block  0
 ------------------
 _ZSt12__niter_baseIPN7testing14TestPartResultEET_S3_:
-function _ZSt12__niter_baseIPN7testing14TestPartResultEET_S3_ called 24 returned 100% blocks executed 100%
-       24:  280:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPN7testing14TestPartResultEET_S3_ called 0 returned 0% blocks executed 0%
+    #####:  280:    __niter_base(_Iterator __it)
         -:  281:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-       24:  282:    { return __it; }
-       24:  282-block  0
+    #####:  282:    { return __it; }
+    %%%%%:  282-block  0
 ------------------
 _ZSt12__niter_baseIPN7testing8internal13edit_distance8EditTypeEET_S5_:
 function _ZSt12__niter_baseIPN7testing8internal13edit_distance8EditTypeEET_S5_ called 0 returned 0% blocks executed 0%

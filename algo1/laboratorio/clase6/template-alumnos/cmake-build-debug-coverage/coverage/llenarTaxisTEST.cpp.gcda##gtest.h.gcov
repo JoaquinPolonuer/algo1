@@ -316,25 +316,25 @@ function _ZNK7testing15AssertionResultcvbEv called 0 returned 0% blocks executed
         -:  310:  // use it when they fail (i.e., the predicate's outcome doesn't match the
         -:  311:  // assertion's expectation). When nothing has been streamed into the
         -:  312:  // object, returns an empty string.
-function _ZNK7testing15AssertionResult7messageEv called 4 returned 100% blocks executed 86%
-        4:  313:  const char* message() const {
-       4*:  314:    return message_.get() != NULL ?  message_->c_str() : "";
-        4:  314-block  0
-call    0 returned 4
-branch  1 taken 4 (fallthrough)
-branch  2 taken 0
-        4:  314-block  1
-call    3 returned 4
-call    4 returned 4
+function _ZNK7testing15AssertionResult7messageEv called 0 returned 0% blocks executed 0%
+    #####:  313:  const char* message() const {
+    #####:  314:    return message_.get() != NULL ?  message_->c_str() : "";
+    %%%%%:  314-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  314-block  1
+call    3 never executed
+call    4 never executed
     %%%%%:  314-block  2
-        4:  314-block  3
+    %%%%%:  314-block  3
         -:  315:  }
         -:  316:  // TODO(vladl@google.com): Remove this after making sure no clients use it.
         -:  317:  // Deprecated; please use message() instead.
-function _ZNK7testing15AssertionResult15failure_messageEv called 4 returned 100% blocks executed 100%
-        4:  318:  const char* failure_message() const { return message(); }
-        4:  318-block  0
-call    0 returned 4
+function _ZNK7testing15AssertionResult15failure_messageEv called 0 returned 0% blocks executed 0%
+    #####:  318:  const char* failure_message() const { return message(); }
+    %%%%%:  318-block  0
+call    0 never executed
         -:  319:
         -:  320:  // Streams a custom failure message into this object.
         -:  321:  template <typename T> AssertionResult& operator<<(const T& value) {
@@ -1434,28 +1434,28 @@ function _ZN7testing4Test5SetupEv called 0 returned 0% blocks executed 0%
         -: 1411:// frame size of CmpHelperEQ. This helps reduce the overhead of some sanitizers
         -: 1412:// when calling EXPECT_* in a tight loop.
         -: 1413:template <typename T1, typename T2>
-function _ZN7testing8internal18CmpHelperEQFailureIiiEENS_15AssertionResultEPKcS4_RKT_RKT0_ called 4 returned 100% blocks executed 62%
-        4: 1414:AssertionResult CmpHelperEQFailure(const char* lhs_expression,
+function _ZN7testing8internal18CmpHelperEQFailureIiiEENS_15AssertionResultEPKcS4_RKT_RKT0_ called 0 returned 0% blocks executed 0%
+    #####: 1414:AssertionResult CmpHelperEQFailure(const char* lhs_expression,
         -: 1415:                                   const char* rhs_expression,
         -: 1416:                                   const T1& lhs, const T2& rhs) {
         -: 1417:  return EqFailure(lhs_expression,
         -: 1418:                   rhs_expression,
         -: 1419:                   FormatForComparisonFailureMessage(lhs, rhs),
         -: 1420:                   FormatForComparisonFailureMessage(rhs, lhs),
-        4: 1421:                   false);
-        4: 1421-block  0
-call    0 returned 4
-call    1 returned 4
-branch  2 taken 4 (fallthrough)
-branch  3 taken 0 (throw)
-        4: 1421-block  1
-call    4 returned 4
-branch  5 taken 4 (fallthrough)
-branch  6 taken 0 (throw)
-        4: 1421-block  2
-call    7 returned 4
-call    8 returned 4
-        4: 1421-block  3
+    #####: 1421:                   false);
+    %%%%%: 1421-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%: 1421-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%: 1421-block  2
+call    7 never executed
+call    8 never executed
+    %%%%%: 1421-block  3
     $$$$$: 1421-block  4
 call    9 never executed
     $$$$$: 1421-block  5
@@ -1465,23 +1465,23 @@ call   10 never executed
         -: 1423:
         -: 1424:// The helper function for {ASSERT|EXPECT}_EQ.
         -: 1425:template <typename T1, typename T2>
-function _ZN7testing8internal11CmpHelperEQIiiEENS_15AssertionResultEPKcS4_RKT_RKT0_ called 8 returned 100% blocks executed 100%
-        8: 1426:AssertionResult CmpHelperEQ(const char* lhs_expression,
+function _ZN7testing8internal11CmpHelperEQIiiEENS_15AssertionResultEPKcS4_RKT_RKT0_ called 11 returned 100% blocks executed 75%
+       11: 1426:AssertionResult CmpHelperEQ(const char* lhs_expression,
         -: 1427:                            const char* rhs_expression,
         -: 1428:                            const T1& lhs,
         -: 1429:                            const T2& rhs) {
-        8: 1430:  if (lhs == rhs) {
-        8: 1430-block  0
-branch  0 taken 4 (fallthrough)
-branch  1 taken 4
-        4: 1431:    return AssertionSuccess();
-        4: 1431-block  0
-call    0 returned 4
+       11: 1430:  if (lhs == rhs) {
+       11: 1430-block  0
+branch  0 taken 11 (fallthrough)
+branch  1 taken 0
+       11: 1431:    return AssertionSuccess();
+       11: 1431-block  0
+call    0 returned 11
         -: 1432:  }
         -: 1433:
-        4: 1434:  return CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);
-        4: 1434-block  0
-call    0 returned 4
+    #####: 1434:  return CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);
+    %%%%%: 1434-block  0
+call    0 never executed
         -: 1435:}
         -: 1436:
         -: 1437:// With this overloaded version, we allow anonymous enums to be used
@@ -1501,14 +1501,14 @@ call    0 returned 4
         -: 1451: public:
         -: 1452:  // This templatized version is for the general case.
         -: 1453:  template <typename T1, typename T2>
-function _ZN7testing8internal8EqHelperILb0EE7CompareIiiEENS_15AssertionResultEPKcS6_RKT_RKT0_ called 8 returned 100% blocks executed 100%
-        8: 1454:  static AssertionResult Compare(const char* lhs_expression,
+function _ZN7testing8internal8EqHelperILb0EE7CompareIiiEENS_15AssertionResultEPKcS6_RKT_RKT0_ called 11 returned 100% blocks executed 100%
+       11: 1454:  static AssertionResult Compare(const char* lhs_expression,
         -: 1455:                                 const char* rhs_expression,
         -: 1456:                                 const T1& lhs,
         -: 1457:                                 const T2& rhs) {
-        8: 1458:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
-        8: 1458-block  0
-call    0 returned 8
+       11: 1458:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+       11: 1458-block  0
+call    0 returned 11
         -: 1459:  }
         -: 1460:
         -: 1461:  // With this overloaded version, we allow anonymous enums to be used

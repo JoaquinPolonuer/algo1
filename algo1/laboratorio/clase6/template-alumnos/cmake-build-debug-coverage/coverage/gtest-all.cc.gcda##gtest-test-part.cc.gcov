@@ -44,36 +44,36 @@
         -:   40:
         -:   41:// Gets the summary of the failure message by omitting the stack trace
         -:   42:// in it.
-function _ZN7testing14TestPartResult14ExtractSummaryB5cxx11EPKc called 4 returned 100% blocks executed 47%
-        4:   43:std::string TestPartResult::ExtractSummary(const char* message) {
-        4:   44:  const char* const stack_trace = strstr(message, internal::kStackTraceMarker);
+function _ZN7testing14TestPartResult14ExtractSummaryB5cxx11EPKc called 0 returned 0% blocks executed 0%
+    #####:   43:std::string TestPartResult::ExtractSummary(const char* message) {
+    #####:   44:  const char* const stack_trace = strstr(message, internal::kStackTraceMarker);
         -:   45:  return stack_trace == NULL ? message :
-       4*:   46:      std::string(message, stack_trace);
-        4:   46-block  0
-branch  0 taken 4 (fallthrough)
-branch  1 taken 0
-        4:   46-block  1
-call    2 returned 4
-call    3 returned 4
-branch  4 taken 4 (fallthrough)
-branch  5 taken 0 (throw)
+    #####:   46:      std::string(message, stack_trace);
+    %%%%%:   46-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   46-block  1
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
     %%%%%:   46-block  2
 call    6 never executed
 call    7 never executed
 branch  8 never executed
 branch  9 never executed
-        4:   46-block  3
-branch 10 taken 0 (fallthrough)
-branch 11 taken 4
+    %%%%%:   46-block  3
+branch 10 never executed
+branch 11 never executed
     %%%%%:   46-block  4
 call   12 never executed
-        4:   46-block  5
-branch 13 taken 4 (fallthrough)
-branch 14 taken 0
-        4:   46-block  6
-call   15 returned 4
-        4:   46-block  7
-        4:   46-block  8
+    %%%%%:   46-block  5
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   46-block  6
+call   15 never executed
+    %%%%%:   46-block  7
+    %%%%%:   46-block  8
     $$$$$:   46-block  9
 branch 16 never executed
 branch 17 never executed
