@@ -1,0 +1,567 @@
+        -:    0:Source:/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej2/Test/llenarTaxisTEST.cpp
+        -:    0:Graph:/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.gcno
+        -:    0:Data:/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "../llenarTaxis.h"
+        -:    3:
+        2:    4:TEST(llenarTaxis1Test, gruposPar) {
+        1:    5:    int k = 3;
+        -:    6:    //exercise
+        1:    7:    int result = llenarTaxis1(k,k,k);
+        -:    8:    // check
+        1:    9:    EXPECT_EQ(result,5);
+        1:   10:}
+------------------
+_ZN31llenarTaxis1Test_gruposPar_Test8TestBodyEv:
+function _ZN31llenarTaxis1Test_gruposPar_Test8TestBodyEv called 1 returned 100% blocks executed 56%
+        1:    4:TEST(llenarTaxis1Test, gruposPar) {
+        1:    5:    int k = 3;
+        -:    6:    //exercise
+        1:    7:    int result = llenarTaxis1(k,k,k);
+        1:    7-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:    8:    // check
+        1:    9:    EXPECT_EQ(result,5);
+        1:    9-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    9-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0
+        1:    9-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:    9-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:    9-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:    9-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:    9-block  6
+call   18 returned 1
+call   19 returned 1
+        1:    9-block  7
+call   20 returned 1
+    $$$$$:    9-block  8
+    $$$$$:    9-block  9
+call   21 never executed
+    $$$$$:    9-block 10
+    $$$$$:    9-block 11
+call   22 never executed
+    $$$$$:    9-block 12
+    $$$$$:    9-block 13
+call   23 never executed
+        1:   10:}
+------------------
+_ZN31llenarTaxis1Test_gruposPar_TestC2Ev:
+function _ZN31llenarTaxis1Test_gruposPar_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:    4:TEST(llenarTaxis1Test, gruposPar) {
+        1:    4-block  0
+call    0 returned 1
+------------------
+        -:   11:
+        2:   12:TEST(llenarTaxis1Test, gruposImpar) {
+        1:   13:    int k = 4;
+        -:   14:    //exercise
+        1:   15:    int result = llenarTaxis1(k,k,k);
+        -:   16:    // check
+        1:   17:    EXPECT_EQ(result,6);
+        1:   18:}
+------------------
+_ZN33llenarTaxis1Test_gruposImpar_Test8TestBodyEv:
+function _ZN33llenarTaxis1Test_gruposImpar_Test8TestBodyEv called 1 returned 100% blocks executed 56%
+        1:   12:TEST(llenarTaxis1Test, gruposImpar) {
+        1:   13:    int k = 4;
+        -:   14:    //exercise
+        1:   15:    int result = llenarTaxis1(k,k,k);
+        1:   15-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   16:    // check
+        1:   17:    EXPECT_EQ(result,6);
+        1:   17-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   17-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0
+        1:   17-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   17-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   17-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   17-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   17-block  6
+call   18 returned 1
+call   19 returned 1
+        1:   17-block  7
+call   20 returned 1
+    $$$$$:   17-block  8
+    $$$$$:   17-block  9
+call   21 never executed
+    $$$$$:   17-block 10
+    $$$$$:   17-block 11
+call   22 never executed
+    $$$$$:   17-block 12
+    $$$$$:   17-block 13
+call   23 never executed
+        1:   18:}
+------------------
+_ZN33llenarTaxis1Test_gruposImpar_TestC2Ev:
+function _ZN33llenarTaxis1Test_gruposImpar_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   12:TEST(llenarTaxis1Test, gruposImpar) {
+        1:   12-block  0
+call    0 returned 1
+------------------
+        -:   19:
+        -:   20://TESTING CASO 2 ---------------------------------------------------------------------
+        -:   21:
+        2:   22:TEST(llenarTaxis2Test, g3Mayor) {
+        1:   23:    int result = llenarTaxis2(1,2,3);
+        -:   24:
+       1*:   25:    EXPECT_EQ(result,4);
+        -:   26:    // lleno 1 con un grupo de 3 + uno de 1
+        -:   27:    // lleno 1 con dos grupos de 2
+        -:   28:    // lleno 2 con los grupos de 3 que quedan
+        1:   29:}
+------------------
+_ZN29llenarTaxis2Test_g3Mayor_Test8TestBodyEv:
+function _ZN29llenarTaxis2Test_g3Mayor_Test8TestBodyEv called 1 returned 100% blocks executed 28%
+        1:   22:TEST(llenarTaxis2Test, g3Mayor) {
+        1:   23:    int result = llenarTaxis2(1,2,3);
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   24:
+       1*:   25:    EXPECT_EQ(result,4);
+        1:   25-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   25-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   25-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   25-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   25-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   25-block  5
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   25-block  6
+call   18 never executed
+call   19 never executed
+        1:   25-block  7
+call   20 returned 1
+    $$$$$:   25-block  8
+    $$$$$:   25-block  9
+call   21 never executed
+    $$$$$:   25-block 10
+    $$$$$:   25-block 11
+call   22 never executed
+    $$$$$:   25-block 12
+    $$$$$:   25-block 13
+call   23 never executed
+        -:   26:    // lleno 1 con un grupo de 3 + uno de 1
+        -:   27:    // lleno 1 con dos grupos de 2
+        -:   28:    // lleno 2 con los grupos de 3 que quedan
+        1:   29:}
+------------------
+_ZN29llenarTaxis2Test_g3Mayor_TestC2Ev:
+function _ZN29llenarTaxis2Test_g3Mayor_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   22:TEST(llenarTaxis2Test, g3Mayor) {
+        1:   22-block  0
+call    0 returned 1
+------------------
+        2:   30:TEST(llenarTaxis2Test, g1Mayor) {
+        1:   31:    int result = llenarTaxis2(3,2,1);
+        -:   32:
+       1*:   33:    EXPECT_EQ(result,3);
+        -:   34:    // lleno 1 juntando un grupo de 3 + uno de 1
+        -:   35:    // lleno 1 con 2 grupos de 2
+        -:   36:    // lleno 1 con dos grupos de 1
+        1:   37:}
+------------------
+_ZN29llenarTaxis2Test_g1Mayor_Test8TestBodyEv:
+function _ZN29llenarTaxis2Test_g1Mayor_Test8TestBodyEv called 1 returned 100% blocks executed 28%
+        1:   30:TEST(llenarTaxis2Test, g1Mayor) {
+        1:   31:    int result = llenarTaxis2(3,2,1);
+        1:   31-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   32:
+       1*:   33:    EXPECT_EQ(result,3);
+        1:   33-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   33-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   33-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   33-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   33-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   33-block  5
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   33-block  6
+call   18 never executed
+call   19 never executed
+        1:   33-block  7
+call   20 returned 1
+    $$$$$:   33-block  8
+    $$$$$:   33-block  9
+call   21 never executed
+    $$$$$:   33-block 10
+    $$$$$:   33-block 11
+call   22 never executed
+    $$$$$:   33-block 12
+    $$$$$:   33-block 13
+call   23 never executed
+        -:   34:    // lleno 1 juntando un grupo de 3 + uno de 1
+        -:   35:    // lleno 1 con 2 grupos de 2
+        -:   36:    // lleno 1 con dos grupos de 1
+        1:   37:}
+------------------
+_ZN29llenarTaxis2Test_g1Mayor_TestC2Ev:
+function _ZN29llenarTaxis2Test_g1Mayor_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   30:TEST(llenarTaxis2Test, g1Mayor) {
+        1:   30-block  0
+call    0 returned 1
+------------------
+        -:   38:
+        -:   39://TESTING CASO 3 ---------------------------------------------------------------------
+        -:   40:
+        2:   41:TEST(llenarTaxis3Test, modResta1o2) {
+        1:   42:    int result = llenarTaxis3(2,3,1);
+        -:   43:    // check
+       1*:   44:    EXPECT_EQ(result,3);
+        -:   45:    // 1 para un grupo de 1 y uno de 3
+        -:   46:    // 1 para 2 grupos de 2
+        -:   47:    // 1 para un grupo de 2 y el 1 que sobra
+        1:   48:}
+------------------
+_ZN33llenarTaxis3Test_modResta1o2_Test8TestBodyEv:
+function _ZN33llenarTaxis3Test_modResta1o2_Test8TestBodyEv called 1 returned 100% blocks executed 28%
+        1:   41:TEST(llenarTaxis3Test, modResta1o2) {
+        1:   42:    int result = llenarTaxis3(2,3,1);
+        1:   42-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   43:    // check
+       1*:   44:    EXPECT_EQ(result,3);
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   44-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   44-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   44-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   44-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   44-block  5
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   44-block  6
+call   18 never executed
+call   19 never executed
+        1:   44-block  7
+call   20 returned 1
+    $$$$$:   44-block  8
+    $$$$$:   44-block  9
+call   21 never executed
+    $$$$$:   44-block 10
+    $$$$$:   44-block 11
+call   22 never executed
+    $$$$$:   44-block 12
+    $$$$$:   44-block 13
+call   23 never executed
+        -:   45:    // 1 para un grupo de 1 y uno de 3
+        -:   46:    // 1 para 2 grupos de 2
+        -:   47:    // 1 para un grupo de 2 y el 1 que sobra
+        1:   48:}
+------------------
+_ZN33llenarTaxis3Test_modResta1o2_TestC2Ev:
+function _ZN33llenarTaxis3Test_modResta1o2_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   41:TEST(llenarTaxis3Test, modResta1o2) {
+        1:   41-block  0
+call    0 returned 1
+------------------
+        -:   49:
+        2:   50:TEST(llenarTaxis3Test, modRestaNo1o2) {
+        1:   51:    int result = llenarTaxis3(4,3,1);
+        -:   52:                // 1 + llenarTaxis3(3,3,0)
+        -:   53:                // 2 + llenarTaxis(3,1,0)
+        -:   54:                // 3 + llenarTaxis(1,0,0)
+       1*:   55:    EXPECT_EQ(result,3);
+        -:   56:    // 1 para un grupo de 1 y uno de 3
+        -:   57:    // 1 para 2 grupos de 2
+        -:   58:    // 1 para un grupo de 2 y los 2 que sobran
+        1:   59:}
+------------------
+_ZN35llenarTaxis3Test_modRestaNo1o2_Test8TestBodyEv:
+function _ZN35llenarTaxis3Test_modRestaNo1o2_Test8TestBodyEv called 1 returned 100% blocks executed 28%
+        1:   50:TEST(llenarTaxis3Test, modRestaNo1o2) {
+        1:   51:    int result = llenarTaxis3(4,3,1);
+        1:   51-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   52:                // 1 + llenarTaxis3(3,3,0)
+        -:   53:                // 2 + llenarTaxis(3,1,0)
+        -:   54:                // 3 + llenarTaxis(1,0,0)
+       1*:   55:    EXPECT_EQ(result,3);
+        1:   55-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   55-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   55-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   55-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   55-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   55-block  5
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   55-block  6
+call   18 never executed
+call   19 never executed
+        1:   55-block  7
+call   20 returned 1
+    $$$$$:   55-block  8
+    $$$$$:   55-block  9
+call   21 never executed
+    $$$$$:   55-block 10
+    $$$$$:   55-block 11
+call   22 never executed
+    $$$$$:   55-block 12
+    $$$$$:   55-block 13
+call   23 never executed
+        -:   56:    // 1 para un grupo de 1 y uno de 3
+        -:   57:    // 1 para 2 grupos de 2
+        -:   58:    // 1 para un grupo de 2 y los 2 que sobran
+        1:   59:}
+------------------
+_ZN35llenarTaxis3Test_modRestaNo1o2_TestC2Ev:
+function _ZN35llenarTaxis3Test_modRestaNo1o2_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   50:TEST(llenarTaxis3Test, modRestaNo1o2) {
+        1:   50-block  0
+call    0 returned 1
+------------------
+        -:   60:
+        2:   61:TEST(llenarTaxis3Test, modRestaNo1o2_2) {
+        1:   62:    int result = llenarTaxis3(5,3,2);
+        -:   63:                // 2 + llenarTaxis3(3,3,0)
+        -:   64:                // 3 + llenarTaxis(3,1,0)
+        -:   65:                // 4 + llenarTaxis(1,0,0)
+        -:   66:
+        1:   67:    EXPECT_EQ(result,5);
+        -:   68:    // 2 para dos grupos de 1 y dos de 3
+        -:   69:    // 1 para 2 grupos de 2
+        -:   70:    // 1 para un grupo de 2 y el que sobra
+        1:   71:}
+------------------
+_ZN37llenarTaxis3Test_modRestaNo1o2_2_Test8TestBodyEv:
+function _ZN37llenarTaxis3Test_modRestaNo1o2_2_Test8TestBodyEv called 1 returned 100% blocks executed 56%
+        1:   61:TEST(llenarTaxis3Test, modRestaNo1o2_2) {
+        1:   62:    int result = llenarTaxis3(5,3,2);
+        1:   62-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   63:                // 2 + llenarTaxis3(3,3,0)
+        -:   64:                // 3 + llenarTaxis(3,1,0)
+        -:   65:                // 4 + llenarTaxis(1,0,0)
+        -:   66:
+        1:   67:    EXPECT_EQ(result,5);
+        1:   67-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   67-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0
+        1:   67-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   67-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   67-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   67-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   67-block  6
+call   18 returned 1
+call   19 returned 1
+        1:   67-block  7
+call   20 returned 1
+    $$$$$:   67-block  8
+    $$$$$:   67-block  9
+call   21 never executed
+    $$$$$:   67-block 10
+    $$$$$:   67-block 11
+call   22 never executed
+    $$$$$:   67-block 12
+    $$$$$:   67-block 13
+call   23 never executed
+        -:   68:    // 2 para dos grupos de 1 y dos de 3
+        -:   69:    // 1 para 2 grupos de 2
+        -:   70:    // 1 para un grupo de 2 y el que sobra
+        1:   71:}
+------------------
+_ZN37llenarTaxis3Test_modRestaNo1o2_2_TestC2Ev:
+function _ZN37llenarTaxis3Test_modRestaNo1o2_2_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   61:TEST(llenarTaxis3Test, modRestaNo1o2_2) {
+        1:   61-block  0
+call    0 returned 1
+------------------
+        -:   72:
+        2:   73:TEST(llenarTaxis3Test, modRestaNo1o2_3) {
+        1:   74:    int result = llenarTaxis3(3,1,0);
+        -:   75:                // 1 + llenarTaxis(3,0,0)
+        -:   76:
+        1:   77:    EXPECT_EQ(result,2);
+        -:   78:            // 1 para el grupo de 2 y 2 grupos de 1
+        -:   79:            // 1 para 3 grupos de 1
+        1:   80:}
+------------------
+_ZN37llenarTaxis3Test_modRestaNo1o2_3_Test8TestBodyEv:
+function _ZN37llenarTaxis3Test_modRestaNo1o2_3_Test8TestBodyEv called 1 returned 100% blocks executed 56%
+        1:   73:TEST(llenarTaxis3Test, modRestaNo1o2_3) {
+        1:   74:    int result = llenarTaxis3(3,1,0);
+        1:   74-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   75:                // 1 + llenarTaxis(3,0,0)
+        -:   76:
+        1:   77:    EXPECT_EQ(result,2);
+        1:   77-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   77-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0
+        1:   77-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   77-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   77-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   77-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   77-block  6
+call   18 returned 1
+call   19 returned 1
+        1:   77-block  7
+call   20 returned 1
+    $$$$$:   77-block  8
+    $$$$$:   77-block  9
+call   21 never executed
+    $$$$$:   77-block 10
+    $$$$$:   77-block 11
+call   22 never executed
+    $$$$$:   77-block 12
+    $$$$$:   77-block 13
+call   23 never executed
+        -:   78:            // 1 para el grupo de 2 y 2 grupos de 1
+        -:   79:            // 1 para 3 grupos de 1
+        1:   80:}
+------------------
+_ZN37llenarTaxis3Test_modRestaNo1o2_3_TestC2Ev:
+function _ZN37llenarTaxis3Test_modRestaNo1o2_3_TestC2Ev called 1 returned 100% blocks executed 100%
+        1:   73:TEST(llenarTaxis3Test, modRestaNo1o2_3) {
+        1:   73-block  0
+call    0 returned 1
+------------------

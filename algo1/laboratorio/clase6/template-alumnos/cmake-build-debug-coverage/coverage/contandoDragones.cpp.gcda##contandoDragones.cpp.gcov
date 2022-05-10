@@ -1,0 +1,10 @@
+        -:    0:Source:/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej3/contandoDragones.cpp
+        -:    0:Graph:/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.gcno
+        -:    0:Data:/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.gcda
+        -:    0:Runs:1
+function _Z16contandoDragonesiiii called 0 returned 0% blocks executed 0%
+    #####:    1:int contandoDragones(int T, int d1, int d2, int d3) {
+    #####:    2:	return 0;
+    %%%%%:    2-block  0
+        -:    3:	// Borrar el return dummy y completar
+        -:    4:}
