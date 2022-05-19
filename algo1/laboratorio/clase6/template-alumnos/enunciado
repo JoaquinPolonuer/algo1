@@ -1,0 +1,50 @@
+Taxis
+A la salida de clases, un viernes a la noche, los estudiantes de Algo1 estan invitados al cumpleanos de un companero.
+Deciden ir en taxi, intentando optimizar el gasto total en el viaje. Los chicos estan divididos en grupos de amigos de entre 1
+y 3 personas y cada grupo de amigos quiere viajar en el mismo taxi. Las variables g1, g2 y g3, indican la CANTIDAD de
+grupos con una, dos y tres personas, respectivamente. Cada taxi tiene capacidad para 4 personas cada uno y puede llevar a
+mas de un grupo (por ejemplo, puede llevar dos grupos de dos personas: si g2=2).
+
+# Lo hice pero esta medio dudosa la implementacion...
+# No entiendo si realmente encontre los errores
+# Por ahora no voy a preocuparme por este ejercicio
+
+Baldosas
+La facultad quiere cambiar las baldosas del piso de un aula rectangular (de dimensiones M x N) sin huecos ni superposiciones. Las baldosas son cuadradas (de B x B).
+Las baldosas se pueden cortar para ponerlas en el piso, pero a lo sumo se puede usar un pedazo de cada una (es decir,
+no vale cortarlas a la mitad para tener dos mas chicas).
+Cual es la minima cantidad de baldosas que se necesita para cubrir el aula?
+
+# Me parecio demasiado trivial, mejor intento otro directamente
+
+Padron electoral
+Un estudiante de Algo1 esta haciendo una pasantia en la Camara Nacional Electoral. Su responsable le pide que haga un
+relevamiento de los electores a nivel nacional que votaran este 22 de octubre, indicando la cantidad de votantes que tienen
+obligacion de hacerlo y para cuantos es opcional. Un rapido vistazo le permite comprobar a este chico que la base de datos
+de las fechas de nacimiento puede contener errores. Para encarar el problema, decide generar una funcion que reciba la fecha
+de nacimiento en tres variables enteras, verifique su validez, y devuelva una de las etiquetas siguientes:
+0 = NO VOTA
+1 = OPCIONAL MENOR
+2 = OBLIGATORIO
+3 = OPCIONAL MAYOR
+4 = ERROR
+OPCIONAL MENOR son aquellos votantes que tienen cumplidos 16 anos el 22 de octubre y tienen menos de 18 anos.
+OPCIONAL MAYOR son aquellos votantes de 70 o mas anos al 22 de octubre.
+Trabajar sobre la funcion int validarVotante(int a, int m, int d): donde a es el ano de nacimiento del registro,
+m el mes y d el dia.
+
+Contando Dragones
+Ana Paula tiene insomnio, y eso la pone de muy mal humor. Desde hace un tiempo cuenta dragones para dormir porque
+las ovejas la aburrieron. Pero claro, tambien se aburrio de contar dragones. Entonces se empezo a imaginar que a algunos les
+hacia maldades. Por ejemplo, de un total de T dragones, a uno de cada d1 dragones les tiro gas pimienta en la nariz, a uno
+de cada d2 dragones los rocio con un extintor, y a uno de cada d3 les puso picante en la comida. Sabemos que d1 < d2 < d3,
+y algun dragon puede sufrir mas de una maldad.
+¿Cuantos dragones no fueron victimas de ninguna de sus maldades?
+Pista: sale sin usar un ciclo que chequee los dragones uno por uno.
+Particion del dominio
+1. d1, d2 y d3 coprimos. Se divide en:
+a) Coprimos de a pares
+b) No coprimos de a pares
+2. d1, d2 y d3 no coprimos. Se divide en:
+a) d2 multiplo de d1 y d3 multiplo de d2.
+b) No ocurre la condicion de arriba.

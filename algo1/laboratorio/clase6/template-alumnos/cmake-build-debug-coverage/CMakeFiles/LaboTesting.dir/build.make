@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/189/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/190/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/189/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/190/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -83,94 +83,10 @@ CMakeFiles/LaboTesting.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LaboTesting.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/main.cpp -o CMakeFiles/LaboTesting.dir/main.cpp.s
 
-CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.o: CMakeFiles/LaboTesting.dir/flags.make
-CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.o: ../ej1/esPrimo.cpp
-CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.o: CMakeFiles/LaboTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.o -MF CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.o.d -o CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.o -c /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/esPrimo.cpp
-
-CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/esPrimo.cpp > CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.i
-
-CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/esPrimo.cpp -o CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.s
-
-CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.o: CMakeFiles/LaboTesting.dir/flags.make
-CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.o: ../ej1/Test/esPrimoTest.cpp
-CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.o: CMakeFiles/LaboTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.o -MF CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.o.d -o CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.o -c /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/Test/esPrimoTest.cpp
-
-CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/Test/esPrimoTest.cpp > CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.i
-
-CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/Test/esPrimoTest.cpp -o CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.s
-
-CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.o: CMakeFiles/LaboTesting.dir/flags.make
-CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.o: ../ej1/puntaje.cpp
-CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.o: CMakeFiles/LaboTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.o -MF CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.o.d -o CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.o -c /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/puntaje.cpp
-
-CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/puntaje.cpp > CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.i
-
-CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/puntaje.cpp -o CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.s
-
-CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.o: CMakeFiles/LaboTesting.dir/flags.make
-CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.o: ../ej1/Test/puntajeTEST.cpp
-CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.o: CMakeFiles/LaboTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.o -MF CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.o.d -o CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.o -c /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/Test/puntajeTEST.cpp
-
-CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/Test/puntajeTEST.cpp > CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.i
-
-CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej1/Test/puntajeTEST.cpp -o CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.s
-
-CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.o: CMakeFiles/LaboTesting.dir/flags.make
-CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.o: ../ej2/llenarTaxis.cpp
-CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.o: CMakeFiles/LaboTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.o -MF CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.o.d -o CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.o -c /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej2/llenarTaxis.cpp
-
-CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej2/llenarTaxis.cpp > CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.i
-
-CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej2/llenarTaxis.cpp -o CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.s
-
-CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.o: CMakeFiles/LaboTesting.dir/flags.make
-CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.o: ../ej2/Test/llenarTaxisTEST.cpp
-CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.o: CMakeFiles/LaboTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.o -MF CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.o.d -o CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.o -c /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej2/Test/llenarTaxisTEST.cpp
-
-CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej2/Test/llenarTaxisTEST.cpp > CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.i
-
-CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej2/Test/llenarTaxisTEST.cpp -o CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.s
-
 CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.o: CMakeFiles/LaboTesting.dir/flags.make
 CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.o: ../ej3/baldosasDelPiso.cpp
 CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.o: CMakeFiles/LaboTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.o -MF CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.o.d -o CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.o -c /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej3/baldosasDelPiso.cpp
 
 CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.i: cmake_force
@@ -184,7 +100,7 @@ CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.s: cmake_force
 CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.o: CMakeFiles/LaboTesting.dir/flags.make
 CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.o: ../ej3/contandoDragones.cpp
 CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.o: CMakeFiles/LaboTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.o -MF CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.o.d -o CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.o -c /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej3/contandoDragones.cpp
 
 CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.i: cmake_force
@@ -198,7 +114,7 @@ CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.s: cmake_force
 CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.o: CMakeFiles/LaboTesting.dir/flags.make
 CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.o: ../ej3/Test/baldosasDelPisoTEST.cpp
 CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.o: CMakeFiles/LaboTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.o -MF CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.o.d -o CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.o -c /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej3/Test/baldosasDelPisoTEST.cpp
 
 CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.i: cmake_force
@@ -212,7 +128,7 @@ CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.s: cmake_force
 CMakeFiles/LaboTesting.dir/ej3/Test/contandoDragonesTEST.cpp.o: CMakeFiles/LaboTesting.dir/flags.make
 CMakeFiles/LaboTesting.dir/ej3/Test/contandoDragonesTEST.cpp.o: ../ej3/Test/contandoDragonesTEST.cpp
 CMakeFiles/LaboTesting.dir/ej3/Test/contandoDragonesTEST.cpp.o: CMakeFiles/LaboTesting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LaboTesting.dir/ej3/Test/contandoDragonesTEST.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LaboTesting.dir/ej3/Test/contandoDragonesTEST.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LaboTesting.dir/ej3/Test/contandoDragonesTEST.cpp.o -MF CMakeFiles/LaboTesting.dir/ej3/Test/contandoDragonesTEST.cpp.o.d -o CMakeFiles/LaboTesting.dir/ej3/Test/contandoDragonesTEST.cpp.o -c /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/ej3/Test/contandoDragonesTEST.cpp
 
 CMakeFiles/LaboTesting.dir/ej3/Test/contandoDragonesTEST.cpp.i: cmake_force
@@ -226,12 +142,6 @@ CMakeFiles/LaboTesting.dir/ej3/Test/contandoDragonesTEST.cpp.s: cmake_force
 # Object files for target LaboTesting
 LaboTesting_OBJECTS = \
 "CMakeFiles/LaboTesting.dir/main.cpp.o" \
-"CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.o" \
-"CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.o" \
-"CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.o" \
-"CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.o" \
-"CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.o" \
-"CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.o" \
 "CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.o" \
 "CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.o" \
 "CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.o" \
@@ -241,12 +151,6 @@ LaboTesting_OBJECTS = \
 LaboTesting_EXTERNAL_OBJECTS =
 
 LaboTesting: CMakeFiles/LaboTesting.dir/main.cpp.o
-LaboTesting: CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.o
-LaboTesting: CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.o
-LaboTesting: CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.o
-LaboTesting: CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.o
-LaboTesting: CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.o
-LaboTesting: CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.o
 LaboTesting: CMakeFiles/LaboTesting.dir/ej3/baldosasDelPiso.cpp.o
 LaboTesting: CMakeFiles/LaboTesting.dir/ej3/contandoDragones.cpp.o
 LaboTesting: CMakeFiles/LaboTesting.dir/ej3/Test/baldosasDelPisoTEST.cpp.o
@@ -256,7 +160,7 @@ LaboTesting: lib/googletest-master/googlemock/gtest/libgtestd.a
 LaboTesting: lib/googletest-master/googlemock/gtest/libgtest_maind.a
 LaboTesting: lib/googletest-master/googlemock/gtest/libgtestd.a
 LaboTesting: CMakeFiles/LaboTesting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable LaboTesting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/template-alumnos/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable LaboTesting"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LaboTesting.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

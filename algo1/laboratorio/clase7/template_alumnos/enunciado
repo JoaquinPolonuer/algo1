@@ -1,0 +1,26 @@
+Ejercicio 1: Dados dos vectores, calcular la matriz que resulta de hacer el producto vectorial entre ambos
+
+Ejercicio 2: Dada una matriz cuadrada, modificarla para obtener su traspuesta
+
+Ejercicio 3: Multiplicar matrices
+
+Ejercicio 4: Dada una matriz, devolver otra matriz reemplazando cada casillero por el promedio de la regi´on compuesta
+
+Ejercicio 5: Contar cuantos picos tiene una matriz, donde un pico es un elemento que es mayor que todos sus vecinos
+
+Ejercicio 6: Dada una matriz cuadrada, decidir si es triangular (inferior o superior).
+
+Ejercicio 7: Decidir si, dado un tablero (no necesariamente de 8 x 8) con reinas de ajedrez, existen dos reinas que se
+amenazan entre s´ı.
+
+Ejercicio 8: Dada una matriz cuadrada de n × n, devolver la diferencia absoluta entre la suma de sus dos diagonales.
+Una diagonal es la que empieza en la posicion (0,0) y termina en (n-1,n-1), y la otra que va entre las posiciones (0,n-1) y
+(n-1,0).
+
+Ejercicio Adicional TaTeTi: Escribir un algoritmo que verifique si una partida de TaTeTi est´a terminada
+
+Ejercicio Adicional ”Willy, el robot”
+Supongamos que tenemos un robot sentado en la esquina arriba izquierda de
+una grilla de X*Y. El robot se puede mover en dos direcciones: para abajo y para la derecha.
+Escribir un algoritmo que determine cuantos caminos posibles puede hacer el robot para llegar de la posicion (0,0) a la
+(X,Y). Queda prohibido usar la formula cerrada para calcularlo.

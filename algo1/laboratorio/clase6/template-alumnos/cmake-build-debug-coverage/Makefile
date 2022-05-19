@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/189/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/190/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/189/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/190/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/joacopolo/Documents/exactas/algo1/laboratorio/clase6/te
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/189/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/190/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/189/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/190/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,37 +97,37 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/clion/189/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/190/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/clion/189/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/190/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/clion/189/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/clion/189/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/clion/189/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/clion/189/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
@@ -225,150 +225,6 @@ gtest_main: cmake_check_build_system
 gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
-
-ej1/Test/esPrimoTest.o: ej1/Test/esPrimoTest.cpp.o
-.PHONY : ej1/Test/esPrimoTest.o
-
-# target to build an object file
-ej1/Test/esPrimoTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.o
-.PHONY : ej1/Test/esPrimoTest.cpp.o
-
-ej1/Test/esPrimoTest.i: ej1/Test/esPrimoTest.cpp.i
-.PHONY : ej1/Test/esPrimoTest.i
-
-# target to preprocess a source file
-ej1/Test/esPrimoTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.i
-.PHONY : ej1/Test/esPrimoTest.cpp.i
-
-ej1/Test/esPrimoTest.s: ej1/Test/esPrimoTest.cpp.s
-.PHONY : ej1/Test/esPrimoTest.s
-
-# target to generate assembly for a file
-ej1/Test/esPrimoTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.s
-.PHONY : ej1/Test/esPrimoTest.cpp.s
-
-ej1/Test/puntajeTEST.o: ej1/Test/puntajeTEST.cpp.o
-.PHONY : ej1/Test/puntajeTEST.o
-
-# target to build an object file
-ej1/Test/puntajeTEST.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.o
-.PHONY : ej1/Test/puntajeTEST.cpp.o
-
-ej1/Test/puntajeTEST.i: ej1/Test/puntajeTEST.cpp.i
-.PHONY : ej1/Test/puntajeTEST.i
-
-# target to preprocess a source file
-ej1/Test/puntajeTEST.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.i
-.PHONY : ej1/Test/puntajeTEST.cpp.i
-
-ej1/Test/puntajeTEST.s: ej1/Test/puntajeTEST.cpp.s
-.PHONY : ej1/Test/puntajeTEST.s
-
-# target to generate assembly for a file
-ej1/Test/puntajeTEST.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.s
-.PHONY : ej1/Test/puntajeTEST.cpp.s
-
-ej1/esPrimo.o: ej1/esPrimo.cpp.o
-.PHONY : ej1/esPrimo.o
-
-# target to build an object file
-ej1/esPrimo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.o
-.PHONY : ej1/esPrimo.cpp.o
-
-ej1/esPrimo.i: ej1/esPrimo.cpp.i
-.PHONY : ej1/esPrimo.i
-
-# target to preprocess a source file
-ej1/esPrimo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.i
-.PHONY : ej1/esPrimo.cpp.i
-
-ej1/esPrimo.s: ej1/esPrimo.cpp.s
-.PHONY : ej1/esPrimo.s
-
-# target to generate assembly for a file
-ej1/esPrimo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.s
-.PHONY : ej1/esPrimo.cpp.s
-
-ej1/puntaje.o: ej1/puntaje.cpp.o
-.PHONY : ej1/puntaje.o
-
-# target to build an object file
-ej1/puntaje.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.o
-.PHONY : ej1/puntaje.cpp.o
-
-ej1/puntaje.i: ej1/puntaje.cpp.i
-.PHONY : ej1/puntaje.i
-
-# target to preprocess a source file
-ej1/puntaje.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.i
-.PHONY : ej1/puntaje.cpp.i
-
-ej1/puntaje.s: ej1/puntaje.cpp.s
-.PHONY : ej1/puntaje.s
-
-# target to generate assembly for a file
-ej1/puntaje.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.s
-.PHONY : ej1/puntaje.cpp.s
-
-ej2/Test/llenarTaxisTEST.o: ej2/Test/llenarTaxisTEST.cpp.o
-.PHONY : ej2/Test/llenarTaxisTEST.o
-
-# target to build an object file
-ej2/Test/llenarTaxisTEST.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.o
-.PHONY : ej2/Test/llenarTaxisTEST.cpp.o
-
-ej2/Test/llenarTaxisTEST.i: ej2/Test/llenarTaxisTEST.cpp.i
-.PHONY : ej2/Test/llenarTaxisTEST.i
-
-# target to preprocess a source file
-ej2/Test/llenarTaxisTEST.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.i
-.PHONY : ej2/Test/llenarTaxisTEST.cpp.i
-
-ej2/Test/llenarTaxisTEST.s: ej2/Test/llenarTaxisTEST.cpp.s
-.PHONY : ej2/Test/llenarTaxisTEST.s
-
-# target to generate assembly for a file
-ej2/Test/llenarTaxisTEST.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.s
-.PHONY : ej2/Test/llenarTaxisTEST.cpp.s
-
-ej2/llenarTaxis.o: ej2/llenarTaxis.cpp.o
-.PHONY : ej2/llenarTaxis.o
-
-# target to build an object file
-ej2/llenarTaxis.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.o
-.PHONY : ej2/llenarTaxis.cpp.o
-
-ej2/llenarTaxis.i: ej2/llenarTaxis.cpp.i
-.PHONY : ej2/llenarTaxis.i
-
-# target to preprocess a source file
-ej2/llenarTaxis.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.i
-.PHONY : ej2/llenarTaxis.cpp.i
-
-ej2/llenarTaxis.s: ej2/llenarTaxis.cpp.s
-.PHONY : ej2/llenarTaxis.s
-
-# target to generate assembly for a file
-ej2/llenarTaxis.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LaboTesting.dir/build.make CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.s
-.PHONY : ej2/llenarTaxis.cpp.s
 
 ej3/Test/baldosasDelPisoTEST.o: ej3/Test/baldosasDelPisoTEST.cpp.o
 .PHONY : ej3/Test/baldosasDelPisoTEST.o
@@ -507,24 +363,6 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... ej1/Test/esPrimoTest.o"
-	@echo "... ej1/Test/esPrimoTest.i"
-	@echo "... ej1/Test/esPrimoTest.s"
-	@echo "... ej1/Test/puntajeTEST.o"
-	@echo "... ej1/Test/puntajeTEST.i"
-	@echo "... ej1/Test/puntajeTEST.s"
-	@echo "... ej1/esPrimo.o"
-	@echo "... ej1/esPrimo.i"
-	@echo "... ej1/esPrimo.s"
-	@echo "... ej1/puntaje.o"
-	@echo "... ej1/puntaje.i"
-	@echo "... ej1/puntaje.s"
-	@echo "... ej2/Test/llenarTaxisTEST.o"
-	@echo "... ej2/Test/llenarTaxisTEST.i"
-	@echo "... ej2/Test/llenarTaxisTEST.s"
-	@echo "... ej2/llenarTaxis.o"
-	@echo "... ej2/llenarTaxis.i"
-	@echo "... ej2/llenarTaxis.s"
 	@echo "... ej3/Test/baldosasDelPisoTEST.o"
 	@echo "... ej3/Test/baldosasDelPisoTEST.i"
 	@echo "... ej3/Test/baldosasDelPisoTEST.s"
