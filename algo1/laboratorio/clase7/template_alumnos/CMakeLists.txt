@@ -11,7 +11,7 @@ set(SOURCE_FILES
         cases.cpp
         main.cpp
         #gTests.cpp
-        )
+        adicional_tateti.cpp)
 
 add_executable(Clase7 ${SOURCE_FILES})
 

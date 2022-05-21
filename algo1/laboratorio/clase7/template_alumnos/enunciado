@@ -5,6 +5,7 @@ Ejercicio 2: Dada una matriz cuadrada, modificarla para obtener su traspuesta
 Ejercicio 3: Multiplicar matrices
 
 Ejercicio 4: Dada una matriz, devolver otra matriz reemplazando cada casillero por el promedio de la regi´on compuesta
+por sus vecinos m´as el valor del centro.
 
 Ejercicio 5: Contar cuantos picos tiene una matriz, donde un pico es un elemento que es mayor que todos sus vecinos
 
