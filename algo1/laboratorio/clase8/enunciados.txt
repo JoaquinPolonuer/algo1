@@ -1,0 +1,56 @@
+
+1. split
+Separar el string seg ́un el delimitador pasado por par ́ametro
+
+2. Dar vuelta palabra
+Dado un string solo conformado por letras y espacios, 
+devolver otro que resulte de dar vuelta el orden de las palabras.
+
+3. Subsecuencia
+Decidir si s es subsecuencia de t.
+
+4. Agrupar Anagramas
+Dado un vector de strings devolver un vector<vector<string>> tal que se cumpla que:
+    - Todos los strings del vector de entrada estan en exactamente un subvector resultado (y el resultado no tiene strings
+    que no est ́en en la entrada);
+    - Cada elemento (vector) del resultado contiene solo anagramas;
+    - Se mantiene el orden relativo de cada palabra dentro de cada vector y el orden de cada vector responde a la primera
+    aparicion de un nuevo anagrama.
+
+Por ejemplo, agruparAnagramas({"ab", "cd", "ef", "ba", "ab", "dc"}) debe devolver
+{{"ab", "ba", "ab"}, {"cd", "dc"}, {"ef"}}
+
+5. esPalindromo
+Decidir si un string es palındromo, es decir, si se escribe igual en ambas direcciones.
+
+6. tieneRepetidos
+bool tieneRepetidos(string s)
+Decidir si un string tiene algun caracter repetido.
+
+7. rotar
+string rotar(string s, int j);
+Devolver un string que este rotado j veces hacia la derecha. Por ejemplo rotar("hola", 7) debe devolver "olah".
+
+8. darVueltaK
+string darVueltaK(string s, int k);
+Dado un string s, dar vuelta cada k caracteres el substring de longitud k. Si la cantidad de caracteres de la entrada no
+es multiplo de k, el ultimo substring (de longitud menor a k) tambien debe darse vuelta.
+Por ejemplo, darVueltaK("abracadabra", 3) debe devolver "rbaacabadar".
+
+9. Analisis de la risa
+Cientificos rusos estan investigando propiedades de la risa. 
+Para ello, analizan el habla humana e identifican que sonidos pertenecen a una risa.
+Estos cientıficos ya hicieron un software que traduce el habla humana en texto.
+Consideran que la risa es una secuencia alternada de las letras “h” y “a”. 
+Por ejemplo, “ahahaha”, “hah” y “a” son risas, pero “abacaba” y “hh” no.
+
+Dado un string s encontrar la longitud de la risa mas larga, es decir, 
+un substring de s que sea risa y que sea mas larga que el resto de las risas.
+
+Deben implementar la funcion en el archivo risas.cpp:
+int risaMasLarga(string s)
+
+Ejemplos
+risaMasLarga("ahaha") debe ser igual a 5.
+risaMasLarga("ahahrunawayahahsofasthah") debe ser igual a 4.
+risaMasLarga("ahahaahaha") debe ser igual a 5.
