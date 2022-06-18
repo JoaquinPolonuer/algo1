@@ -7,82 +7,115 @@ using namespace std;
 
 bool sonIguales(string s, string t)
 {
-    bool son_iguales = true;
-    for (int i = 0; i < s.size(); i++)
+    if (s.size() != t.size())
     {
-        if (s[i] != t[i])
-        {
-            son_iguales = false;
-        }
-    }
-    return son_iguales;
-}
-
-string moverAlPrincipio(string s, int n)
-{
-    string s_principio = "";
-    s_principio.push_back(s[n]);
-
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (i != n)
-        {
-            s_principio.push_back(s[i]);
-        }
-    }
-    return s_principio;
-}
-
-string moverAlFinal(string s, int n)
-{
-    string s_final = "";
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (i != n)
-        {
-            s_final.push_back(s[i]);
-        }
+        return false;
     }
 
-    s_final.push_back(s[n]);
-    return s_final;
+    int i = 0;
+    while (i < t.size() && s[i] == t[i])
+    {
+        i++;
+    }
+    return i == t.size();
 }
 
-int minimo(vector<int> xs)
+int minimo(vector<int> l)
 {
-    int min = xs[0];
-    for (int i = 0; i < xs.size(); i++)
+    int min = l[0];
+    for (int i = 0; i < l.size(); i++)
     {
-        if (xs[i] < min)
+        if (l[i] < min)
         {
-            min = xs[i];
+            min = l[i];
         }
     }
     return min;
 }
 
-bool estaEnSecuencia(vector<string> seq, string s){
-    for(int i = 0; i<seq.size(); i++){
-        if (sonIguales(seq[i], s)){
-            return true;
-        }
+void swap(string &s, int p0, int p1)
+{
+    char aux = s[p1];
+    s[p1] = s[p0];
+    s[p0] = aux;
+}
+string tirarAlPrincipio(string s, int p)
+{
+    for (int i = p; i > 0; i--)
+    {
+        swap(s, i, i - 1);
     }
-    return false;
+    return s;
+}
+string tirarAlFinal(string s, int p)
+{
+    for (int i = p; i < s.size() - 1; i++)
+    {
+        swap(s, i, i + 1);
+    }
+    return s;
+}
+vector<string> permutaciones(string s)
+{
+    vector<string> perms;
+
+    // todas las que puedo mandar para adelante;
+    for(int i = 0; i < s.size(); i++){
+        string perm = tirarAlPrincipio(s, i);
+        perms.push_back(perm);
+    }
+    // todas las que puedo mandar para adelante;
+    for(int i = 0; i < s.size(); i++){
+        string perm = tirarAlFinal(s, i);
+        perms.push_back(perm);
+    }
+    return perms;
 }
 
-int middleOut(string s, string t)
-{
+bool pertenece(string p, vector<string> ps){
+    bool _pertenece = false;
+    for(int i = 0; i < ps.size(); i++){
+        if(sonIguales(p, ps[i])){
+            _pertenece = true;
+        }
+    }
+    return _pertenece;
+}
 
+int middleOut(string s, string t, vector<string> visitadas)
+{
+    if (sonIguales(s, t))
+    {
+        return 0;
+    }
+
+    vector<string> perms = permutaciones(s);
+    vector<int> costos;
+    for (int i = 0; i < perms.size(); i++)
+    {
+        string nueva_perm = perms[i];
+        if(!pertenece(nueva_perm, visitadas)){
+            visitadas.push_back(nueva_perm);
+            int costo = middleOut(nueva_perm, t, visitadas);
+            costos.push_back(costo);
+        }
+    }
+    
+    // Creo que esta bien el razonamiento pero
+    // se rompe cuando costos es una lista vacia
+    // no se que deberia devolver en ese caso
+    return 1 + minimo(costos);
 }
 
 int main()
 {
     string s;
     string t;
+    vector<string> visitadas;
+    vector<int> boca;
 
     cin >> s >> t;
-
-    int res = middleOut(s, t);
+    int res = middleOut(s, t, visitadas);
     cout << res;
     return 0;
 }
